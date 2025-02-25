@@ -20,3 +20,1449 @@ this README serves as the pragmatic aggregation point.
 [content vocab](#content-vocab)
 
 [file_type vocab](#file_type-vocab)
+
+## data velds
+- https://github.com/veldhub/veld_data__akp_ner_linkedcat
+  - [linkedcat/veld.yaml](https://github.com/veldhub/veld_data__akp_ner_linkedcat/blob/main/linkedcat/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: Prefered dataset is not this one, but linkedcat2! This dataset was created by applying a custom trained SpaCy NER model an APIS / ÖBL data, on data set 'linkedcat2' at our solr index. The csv file is split into id column, character start index of recognized entity, character end index of entity, label of entity type, and a small context window.
+      - topic: NLP, Named Entity Recognition
+      - file_type: csv
+      - content: NER data, inferenced NLP data
+  - [linkedcat2/veld.yaml](https://github.com/veldhub/veld_data__akp_ner_linkedcat/blob/main/linkedcat2/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: Prefered dataset is this one, not linkedcat! This dataset was created by applying a custom trained SpaCy NER model an APIS / ÖBL data, on data set 'linkedcat2' at our solr index. The csv file is split into id column, character start index of recognized entity, character end index of entity, label of entity type, and a small context window.
+      - topic: NLP, Named Entity Recognition
+      - file_type: csv
+      - content: NER data, inferenced NLP data
+- https://github.com/veldhub/veld_data__amc_we_training_data
+  - [203_vert_rftt_inhalt_nodup/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: Entire AMC: no metadata, only text, one sentence per line; Created by Hannes Pirker.
+      - topic: NLP
+      - file_type: txt
+      - content: raw text, newspaper texts
+  - [203_vert_rftt_inhalt_nodup__uniq/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: Entire AMC: no metadata, only text, one sentence per line, each sentence made unique by ordering AMC sentences alphabetically and removing dupcliates; Created by Hannes Pirker.
+      - topic: NLP
+      - file_type: txt
+      - content: raw text, newspaper texts
+  - [203_vert_rftt_inhalt_nodup__uniq__stripped/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq__stripped/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: Entire AMC: unique sentence data, cleaned from non-alphanumeric junk before 'A' (anything before line number 54,993) and after 'Z' (anything after line number 521,781,020)
+      - topic: NLP
+      - file_type: txt
+      - content: raw text, newspaper texts
+  - [203_vert_rftt_inhalt_nodup__uniq__stripped__lowercased/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq__stripped__lowercased/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: Entire AMC: unique sentences, stripped from non-alphanumeric lines, lowercased.
+      - topic: NLP
+      - file_type: txt
+      - content: raw text, newspaper texts
+  - [203_vert_rftt_inhalt_nodup__uniq__stripped__lowercased__punctuation_removed/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq__stripped__lowercased__punctuation_removed/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: Entire AMC: unique sentences, stripped from non-alphanumeric lines, lowercased, punctuation removed.
+      - topic: NLP
+      - file_type: txt
+      - content: raw text, newspaper texts
+  - [203_vert_rftt_inhalt_nodup__uniq__stripped__lowercased__punctuation_removed__cleaned/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq__stripped__lowercased__punctuation_removed__cleaned/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: Entire AMC: unique sentences, stripped from non-alphanumeric lines, lowercased, punctuation removed, removed sentences with too many non-alphanumeric characters.
+      - topic: NLP
+      - file_type: txt
+      - content: raw text, newspaper texts
+  - [203_vert_rftt_inhalt_nodup__uniq__stripped__sampled/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq__stripped__sampled/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 10% AMC: stripped from non-alphanumeric lines, 10% sampled.
+      - topic: NLP
+      - file_type: txt
+      - content: raw text, newspaper texts
+  - [203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 10% AMC: stripped from non-alphanumeric lines, 10% sampled, lowercased.
+      - topic: NLP
+      - file_type: txt
+      - content: raw text, newspaper texts
+  - [203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased__punctuation_removed/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased__punctuation_removed/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 10% AMC: stripped from non-alphanumeric lines, 10% sampled, lowercased, punctuation removed.
+      - topic: NLP
+      - file_type: txt
+      - content: raw text, newspaper texts
+  - [203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased__punctuation_removed__cleaned/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased__punctuation_removed__cleaned/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 10% AMC: stripped from non-alphanumeric lines, 10% sampled, lowercased, punctuation removed, removed sentences with too many non-alphanumeric characters.
+      - topic: NLP
+      - file_type: txt
+      - content: raw text, newspaper texts
+- https://github.com/veldhub/veld_data__apis_oebl__ner_gold
+  - [data_cleaned/veld.yaml](https://github.com/veldhub/veld_data__apis_oebl__ner_gold/blob/main/data_cleaned/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: Overlapping entities are removed, index offsets corrected, and duplicates removed. Also texts without any entities are removed too, since it's not known if they don't contain any entities (which often is not true; quite a few of them contain entities) or if the annotators simply didn't go through them (which is more likely, hence they were removed). In the original uncleaned data, some entity types are suffixed with numbers (e.g. `PER-1337`). These were used for identifying entities in a project context, but are probably of less use for NER NLP training. This dataset keeps the identifiers.
+      - topic: NLP, Named Entity Recognition
+      - file_type: json
+      - content: gold data, NER gold data, NLP gold data
+  - [data_cleaned_simplified/veld.yaml](https://github.com/veldhub/veld_data__apis_oebl__ner_gold/blob/main/data_cleaned_simplified/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: Same as the cleaned data, but with simplified entities (e.g. `PER` instead of `PER-1337`). Probably it's best to use this data set for NER training.
+      - topic: NLP, Named Entity Recognition
+      - file_type: json
+      - content: gold data, NER gold data, NLP gold data
+  - [data_uncleaned/veld.yaml](https://github.com/veldhub/veld_data__apis_oebl__ner_gold/blob/main/data_uncleaned/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: The original, but united, data coming from APIS / ÖBL.
+      - topic: NLP, Named Entity Recognition
+      - file_type: json
+      - content: gold data, NER gold data, NLP gold data
+- https://github.com/veldhub/veld_data__apis_spacy_ner_models
+  - [m1/model-best/veld.yaml](https://github.com/veldhub/veld_data__apis_spacy_ner_models/blob/main/m1/model-best/veld.yaml)
+    - valid: True
+    - metadata:
+      - file_type: spaCy model
+      - content: spaCy model, NLP model
+  - [m2/model-best/veld.yaml](https://github.com/veldhub/veld_data__apis_spacy_ner_models/blob/main/m2/model-best/veld.yaml)
+    - valid: True
+    - metadata:
+      - file_type: spaCy model
+      - content: spaCy model, NLP model
+- https://github.com/veldhub/veld_data__bert_amc_embeddings_db
+- https://github.com/veldhub/veld_data__demo_inference_input_ts-vienna-2024
+  - [veld.yaml](https://github.com/veldhub/veld_data__demo_inference_input_ts-vienna-2024/blob/main/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: A single txt file, used as inference input to a self-trained updipe model as a demonstration
+      - topic: NLP, Universal Dependencies
+      - file_type: txt
+      - content: raw text
+- https://github.com/veldhub/veld_data__demo_train_data_ts-vienna-2024
+  - [veld.yaml](https://github.com/veldhub/veld_data__demo_train_data_ts-vienna-2024/blob/main/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: A single conllu file, used to train a updipe model as a demonstration
+      - topic: NLP, Universal Dependencies
+      - file_type: conllu
+      - content: linguistically enriched text, tokenized text, lemmatized text
+- https://github.com/veldhub/veld_data__eltec_conllu_stats
+  - [veld.yaml](https://github.com/veldhub/veld_data__eltec_conllu_stats/blob/main/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: eltec analysis on its conllu data inferenced with udpipe
+      - topic: NLP, Tokenization, Lemmatization, Part Of Speech, Dependency Parsing, Universal Dependencies, Grammatical Annotation
+      - file_type: json
+      - content: statistics, linguistic data, annotated literature
+- https://github.com/veldhub/veld_data__eltec_original_selection
+  - [veld.yaml](https://github.com/veldhub/veld_data__eltec_original_selection/blob/main/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: parent git repo that integrates various ELTeC corpora as submodules for downstream processing.
+      - file_type: xml
+      - content: TEI, annotated literature
+- https://github.com/veldhub/veld_data__fasttext_models
+  - [m1/veld.yaml](https://github.com/veldhub/veld_data__fasttext_models/blob/main/m1/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: test training
+      - topic: NLP, Word Embeddings
+      - file_type: fastText model
+  - [m3/veld.yaml](https://github.com/veldhub/veld_data__fasttext_models/blob/main/m3/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 10% AMC model
+      - topic: NLP, Word Embeddings
+      - file_type: fastText model
+  - [m4/veld.yaml](https://github.com/veldhub/veld_data__fasttext_models/blob/main/m4/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 10% AMC model
+      - topic: NLP, Word Embeddings
+      - file_type: fastText model
+  - [m5/veld.yaml](https://github.com/veldhub/veld_data__fasttext_models/blob/main/m5/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 10% AMC model
+      - topic: NLP, Word Embeddings
+      - file_type: fastText model
+  - [m6/veld.yaml](https://github.com/veldhub/veld_data__fasttext_models/blob/main/m6/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 100% AMC model
+      - topic: NLP, Word Embeddings
+      - file_type: fastText model
+  - [m7/veld.yaml](https://github.com/veldhub/veld_data__fasttext_models/blob/main/m7/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 100% AMC model
+      - topic: NLP, Word Embeddings
+      - file_type: fastText model
+  - [m8/veld.yaml](https://github.com/veldhub/veld_data__fasttext_models/blob/main/m8/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 100% AMC model
+      - topic: NLP, Word Embeddings
+      - file_type: fastText model
+  - [m9/veld.yaml](https://github.com/veldhub/veld_data__fasttext_models/blob/main/m9/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 100% AMC model
+      - topic: NLP, Word Embeddings
+      - file_type: fastText model
+- https://github.com/veldhub/veld_data__glove_models
+  - [m1/veld.yaml](https://github.com/veldhub/veld_data__glove_models/blob/main/m1/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: glove test model
+      - topic: NLP, Word Embeddings
+      - file_type: GloVe model, bin, txt
+  - [m3/veld.yaml](https://github.com/veldhub/veld_data__glove_models/blob/main/m3/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 1% AMC model
+      - topic: NLP, Word Embeddings
+      - file_type: GloVe model, bin, txt
+- https://github.com/veldhub/veld_data__word2vec_models
+  - [m3/veld.yaml](https://github.com/veldhub/veld_data__word2vec_models/blob/main/m3/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 10% AMC model
+      - topic: NLP, Word Embeddings
+      - file_type: word2vec model
+  - [m4/veld.yaml](https://github.com/veldhub/veld_data__word2vec_models/blob/main/m4/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 10% AMC model
+      - topic: NLP, Word Embeddings
+      - file_type: word2vec model
+  - [m5/veld.yaml](https://github.com/veldhub/veld_data__word2vec_models/blob/main/m5/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 10% AMC model
+      - topic: NLP, Word Embeddings
+      - file_type: word2vec model
+  - [m6/veld.yaml](https://github.com/veldhub/veld_data__word2vec_models/blob/main/m6/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 100% AMC model
+      - topic: NLP, Word Embeddings
+      - file_type: word2vec model
+  - [m7/veld.yaml](https://github.com/veldhub/veld_data__word2vec_models/blob/main/m7/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 100% AMC model
+      - topic: NLP, Word Embeddings
+      - file_type: word2vec model
+  - [m8/veld.yaml](https://github.com/veldhub/veld_data__word2vec_models/blob/main/m8/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 100% AMC model
+      - topic: NLP, Word Embeddings
+      - file_type: word2vec model
+  - [m9/veld.yaml](https://github.com/veldhub/veld_data__word2vec_models/blob/main/m9/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: 100% AMC model
+      - topic: NLP, Word Embeddings
+      - file_type: word2vec model
+- https://github.com/veldhub/veld_data__wordembeddings_evaluation
+  - [evaluation_gold_data/capitalized/veld.yaml](https://github.com/veldhub/veld_data__wordembeddings_evaluation/blob/main/evaluation_gold_data/capitalized/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: custom evaluation data for evaluating word embeddings models. Words are capitalized.
+      - topic: NLP, Word Embeddings
+      - file_type: yaml
+      - content: evaluation data, NLP gold data
+  - [evaluation_gold_data/lowercase/veld.yaml](https://github.com/veldhub/veld_data__wordembeddings_evaluation/blob/main/evaluation_gold_data/lowercase/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: custom evaluation data for evaluating word embeddings models. Words are all lowercase.
+      - topic: NLP, Word Embeddings
+      - file_type: yaml
+      - content: evaluation data, NLP gold data
+
+## code velds
+- https://github.com/veldhub/veld_code__akp_ner_inference
+  - [veld_infer.yaml](https://github.com/veldhub/veld_code__akp_ner_inference/blob/main/veld_infer.yaml)
+    - valid: True
+    - metadata:
+      - description: apply NER models on linkedcat data for usage of the inferenced entites in the AKP project
+      - topic: NLP, Machine Learning, Named Entity Recognition
+      - input:
+        - 1:
+          - file_type: spaCy model
+          - content: NLP model, NER model
+      - output:
+        - 1:
+          - description: inferenced NLP / NER data.
+          - file_type: csv
+          - content: inferenced NLP data, NLP data, NER data
+- https://github.com/veldhub/veld_code__analyse_conllu
+  - [veld.yaml](https://github.com/veldhub/veld_code__analyse_conllu/blob/main/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: A statistical summary on conllu data, to count linguistic features of a conllu file: - count of total tokens - count of total lemma - count of lemma normalized by token (to put the lemma in relation with token) - count of occurrence of each (Universal Dependencies) part of speech tag Can be adapted to other use cases and made more flexible, but is primarily used in this chain veld: https://github.com/veldhub/veld_chain__eltec_udpipe_inference
+      - topic: NLP, Machine Learning, Tokenization, Lemmatization, Part Of Speech, Dependency Parsing, Universal Dependencies, Grammatical Annotation
+      - input:
+        - 1:
+          - file_type: conllu
+      - output:
+        - 1:
+          - file_type: json
+          - content: statistics, NLP statistics
+- https://github.com/veldhub/veld_code__apache_jena_fuseki
+  - [veld_export.yaml](https://github.com/veldhub/veld_code__apache_jena_fuseki/blob/main/veld_export.yaml)
+    - valid: True
+    - metadata:
+      - description: Exports data from an Apache Fuseki triplestore given a rq query file, into several serialization formats.
+      - topic: ETL, RDF, triplestore
+  - [veld_import_rdf.yaml](https://github.com/veldhub/veld_code__apache_jena_fuseki/blob/main/veld_import_rdf.yaml)
+    - valid: True
+    - metadata:
+      - description: Import script to batch import rdf data from a folder into an apache fuseki triplestore. Note that if this service should connect to a triplestore running in another docker compose service, the relevant `networks` section might be necessary to set accordingly.
+      - topic: ETL, RDF, triplestore, database
+  - [veld_run_server.yaml](https://github.com/veldhub/veld_code__apache_jena_fuseki/blob/main/veld_run_server.yaml)
+    - valid: False, elements not allowed: /x-veld/code/storage
+- https://github.com/veldhub/veld_code__bert_embeddings
+  - [veld_infer_and_create_index.yaml](https://github.com/veldhub/veld_code__bert_embeddings/blob/main/veld_infer_and_create_index.yaml)
+    - valid: True
+- https://github.com/veldhub/veld_code__conllueditor
+  - [veld.yaml](https://github.com/veldhub/veld_code__conllueditor/blob/main/veld.yaml)
+    - valid: False, elements not allowed: /x-veld/code/storage
+- https://github.com/veldhub/veld_code__downloader
+  - [veld.yaml](https://github.com/veldhub/veld_code__downloader/blob/main/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: A download helper, for simple or batch downloads. Also offers automatic compressed file extraction.
+      - topic: ETL
+- https://github.com/veldhub/veld_code__fasttext
+  - [veld_export.yaml](https://github.com/veldhub/veld_code__fasttext/blob/main/veld_export.yaml)
+    - valid: True
+    - metadata:
+      - description: exports a fasttext model to a pkl file containing a python dict, where the keys are words and its values are the learned vectors, represented as high-dimensional numpy arrays.
+      - topic: ETL, NLP, Machine Learning, Word Embeddings
+  - [veld_jupyter_notebook.yaml](https://github.com/veldhub/veld_code__fasttext/blob/main/veld_jupyter_notebook.yaml)
+    - valid: True
+    - metadata:
+      - description: a fasttext training and inference jupyter notebook.
+      - topic: NLP, Machine Learning, Word Embeddings
+  - [veld_train.yaml](https://github.com/veldhub/veld_code__fasttext/blob/main/veld_train.yaml)
+    - valid: True
+    - metadata:
+      - description: A fasttext training setup.
+      - topic: NLP, Machine Learning, Word Embeddings
+      - input:
+        - 1:
+          - description: training data must be expressed as one sentence per line.
+          - file_type: txt
+          - content: raw text
+      - output:
+        - 1:
+          - file_type: fastText model
+          - content: Word Embeddings
+- https://github.com/veldhub/veld_code__flair
+  - [veld_infer.yaml](https://github.com/veldhub/veld_code__flair/blob/main/veld_infer.yaml)
+    - valid: False, non-optional value: '<SCALAR> | {<SCALAR>}' missing at: /x-veld/code/topic/
+  - [veld_train.yaml](https://github.com/veldhub/veld_code__flair/blob/main/veld_train.yaml)
+    - valid: False, non-optional value: '<SCALAR> | {<SCALAR>}' missing at: /x-veld/code/topic/
+- https://github.com/veldhub/veld_code__glove
+  - [veld_export.yaml](https://github.com/veldhub/veld_code__glove/blob/main/veld_export.yaml)
+    - valid: True
+    - metadata:
+      - description: exports a glove model to a pkl file containing a python dict, where the keys are words and its values are the learned vectors, represented as high-dimensional numpy arrays.
+      - topic: ETL, NLP, Machine Learning, Word Embeddings
+  - [veld_jupyter_notebook.yaml](https://github.com/veldhub/veld_code__glove/blob/main/veld_jupyter_notebook.yaml)
+    - valid: True
+    - metadata:
+      - description: A jupyter notebook that loads GloVe vectors and provides some convenient functions to use them.
+      - topic: NLP, Machine Learning, Word Embeddings
+  - [veld_train.yaml](https://github.com/veldhub/veld_code__glove/blob/main/veld_train.yaml)
+    - valid: True
+    - metadata:
+      - description: A GloVe training setup.
+      - topic: NLP, Machine Learning, Word Embeddings
+      - input:
+        - 1:
+          - description: In the txt file, each line must be one sentence
+          - file_type: txt
+          - content: natural text
+      - output:
+        - 1:
+          - file_type: GloVe model
+          - content: NLP model, Word Embeddings model
+        - 2:
+          - file_type: GloVe model
+          - content: NLP model, Word Embeddings model
+        - 3:
+          - file_type: GloVe model
+          - content: NLP model, Word Embeddings model
+        - 4:
+          - file_type: GloVe model
+          - content: NLP model, Word Embeddings model
+- https://github.com/veldhub/veld_code__inception
+  - [veld.yaml](https://github.com/veldhub/veld_code__inception/blob/main/veld.yaml)
+    - valid: False, elements not allowed: /x-veld/code/storage
+- https://github.com/veldhub/veld_code__jupyter_notebook_base
+  - [veld.yaml](https://github.com/veldhub/veld_code__jupyter_notebook_base/blob/main/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: template veld code repo for a juptyer notebook
+- https://github.com/veldhub/veld_code__pypi_publisher
+  - [veld_publish.yaml](https://github.com/veldhub/veld_code__pypi_publisher/blob/main/veld_publish.yaml)
+    - valid: False, elements not allowed: /x-veld/code/inputs
+- https://github.com/veldhub/veld_code__simple_docker_test
+  - [veld.yaml](https://github.com/veldhub/veld_code__simple_docker_test/blob/main/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: prints information about the python intepreter within the docker container.
+      - topic: Testing
+- https://github.com/veldhub/veld_code__spacy
+  - [veld_convert.yaml](https://github.com/veldhub/veld_code__spacy/blob/main/veld_convert.yaml)
+    - valid: True
+    - metadata:
+      - description: prepare data for spacy NER training, since spacy expects the entity annotation indices to be precisely at the beginning and end of the words, and also no overlapping entity annotations. Then it converts the data to spaCy docbin, and prepares it for training by splitting it into train, dev, eval subsets, and shuffling them randomly.
+      - topic: ETL, NLP, Machine Learning
+      - input:
+        - 1:
+          - description: name of the csv file, containing NER gold data
+          - file_type: json
+          - content: NER gold data
+      - output:
+        - 1:
+          - description: path to folder where spacy docbin files will be stored with file names `train.spacy, dev.spacy, eval.spacy`
+          - file_type: spaCy docbin
+          - content: NER gold data
+        - 2:
+          - description: log file of conversion
+          - file_type: txt
+          - content: log
+  - [veld_create_config.yaml](https://github.com/veldhub/veld_code__spacy/blob/main/veld_create_config.yaml)
+    - valid: True
+    - metadata:
+      - description: Creating a spacy config by encapsulating `init config` ( https://spacy.io/api/cli#init-config ) and `init fill-config` ( https://spacy.io/api/cli#init-fill-config ) . The output is ai config file used for training; see more here: https://spacy.io/usage/training/#config
+      - topic: NLP, Machine Learning
+      - output:
+        - 1:
+          - description: See https://spacy.io/usage/training/#config
+          - file_type: cfg
+          - content: spacy training config
+  - [veld_publish_to_hf.yaml](https://github.com/veldhub/veld_code__spacy/blob/main/veld_publish_to_hf.yaml)
+    - valid: True
+    - metadata:
+      - description: simple service to push spacy models to huggingface. Important: Only works from spacy v3.* onwards!
+      - topic: NLP, ETL
+      - input:
+        - 1:
+          - file_type: spaCy model
+          - content: NLP model
+  - [veld_train.yaml](https://github.com/veldhub/veld_code__spacy/blob/main/veld_train.yaml)
+    - valid: True
+    - metadata:
+      - description: A spacy trainig setup, utilizing spacy v3's config system.
+      - topic: NLP, Machine Learning
+      - input:
+        - 1:
+          - file_type: spaCy docbin
+          - content: NLP gold data, ML gold data, gold data
+        - 2:
+          - file_type: spaCy docbin
+          - content: NLP gold data, ML gold data, gold data
+        - 3:
+          - file_type: spaCy docbin
+          - content: NLP gold data, ML gold data, gold data
+        - 4:
+          - description: See https://spacy.io/usage/training/#config
+          - file_type: cfg
+          - content: spacy training config
+      - output:
+        - 1:
+          - file_type: spaCy model
+          - content: NLP model
+        - 2:
+          - description: training log file
+          - file_type: txt
+          - content: log
+        - 3:
+          - description: evaluation log file
+          - file_type: txt
+          - content: log
+- https://github.com/veldhub/veld_code__teitok-tools
+  - [veld_parseudpipe.yaml](https://github.com/veldhub/veld_code__teitok-tools/blob/main/veld_parseudpipe.yaml)
+    - valid: True
+    - metadata:
+      - description: This code veld encapsulates and veldifies the parseudpipe script. All its config here are passed down to the script. For more information on its usage and config, see: https://github.com/ufal/teitok-tools?tab=readme-ov-file#parseudpipe
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+      - input:
+        - 1:
+          - file_type: xml
+      - output:
+        - 1:
+          - file_type: xml
+  - [veld_udpipe2teitok.yaml](https://github.com/veldhub/veld_code__teitok-tools/blob/main/veld_udpipe2teitok.yaml)
+    - valid: True
+    - metadata:
+      - description: This code veld encapsulates and veldifies the udpipe2teitok script. All its config here are passed down to the script. For more information on its usage and config, see: https://github.com/ufal/teitok-tools?tab=readme-ov-file#udpipe2teitok
+      - topic: NLP, Grammatical Annotation, Universal Dependencies, Tokenization, Lemmatization, Part Of Speech, Dependency Parsing
+  - [veld_xmltokenize.yaml](https://github.com/veldhub/veld_code__teitok-tools/blob/main/veld_xmltokenize.yaml)
+    - valid: True
+    - metadata:
+      - description: This code veld encapsulates and veldifies the xmltokenize script. All its config here are passed down to the script. For more information on its usage and config, see: https://github.com/ufal/teitok-tools?tab=readme-ov-file#xmltokenize
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+      - input:
+        - 1:
+          - description: The xml file to be tokenized
+          - file_type: xml
+      - output:
+        - 1:
+          - description: The output tokenized xml
+          - file_type: xml
+- https://github.com/veldhub/veld_code__udpipe
+  - [veld_infer.yaml](https://github.com/veldhub/veld_code__udpipe/blob/main/veld_infer.yaml)
+    - valid: True
+    - metadata:
+      - description: udpipe inference setup. See https://lindat.mff.cuni.cz/services/udpipe/ for more information on the software encapsulated here.
+      - topic: NLP, Machine Learning, Tokenization, Lemmatization, Part Of Speech, Dependency Parsing, Universal Dependencies, Grammatical Annotation
+      - input:
+        - 1:
+          - description: txt files to be inferenced on. Note that the environment var `in_txt_file` is optional, and if it is not present, the entire input folder will be processed recursively
+          - file_type: txt
+          - content: raw text
+        - 2:
+          - file_type: udpipe model
+          - content: NLP model, tokenizer, lemmatizer
+      - output:
+        - 1:
+          - description: The file name of the output conllu is created by the corresponding input txt file, since recursive processing requires such automatic logic
+          - file_type: conllu, tsv
+          - content: inferenced NLP data, tokenized text, lemmatized text, Part Of Speech of text, Universal Dependencies of text, grammatically annotated text, linguistic data
+  - [veld_train.yaml](https://github.com/veldhub/veld_code__udpipe/blob/main/veld_train.yaml)
+    - valid: True
+    - metadata:
+      - description: udpipe training setup. See https://lindat.mff.cuni.cz/services/udpipe/ for more information on the software encapsulated here.
+      - topic: NLP, Machine Learning, Tokenization, Lemmatization, Part Of Speech, Dependency Parsing, Universal Dependencies, Grammatical Annotation
+      - input:
+        - 1:
+          - file_type: conllu
+          - content: tokenized text, enriched text, linguistic data
+      - output:
+        - 1:
+          - file_type: udpipe model
+          - content: NLP model, tokenizer, lemmatizer
+- https://github.com/veldhub/veld_code__wikipedia_nlp_preprocessing
+  - [data/wikipedia_json/veld_data_extracted.yaml](https://github.com/veldhub/veld_code__wikipedia_nlp_preprocessing/blob/main/data/wikipedia_json/veld_data_extracted.yaml)
+    - valid: False, elements not allowed: /x-veld/data/topics,contents
+  - [veld_download_and_extract.yaml](https://github.com/veldhub/veld_code__wikipedia_nlp_preprocessing/blob/main/veld_download_and_extract.yaml)
+    - valid: True
+    - metadata:
+      - description: downloading wikipedia archive and extracting each article to a json file.
+      - topic: NLP, Machine Learning, ETL
+      - output:
+        - 1:
+          - description: a folder containing json files, where each file contains the content of a wikipedia article
+          - file_type: json
+          - content: NLP training data, raw text
+  - [veld_transform_wiki_json_to_txt.yaml](https://github.com/veldhub/veld_code__wikipedia_nlp_preprocessing/blob/main/veld_transform_wiki_json_to_txt.yaml)
+    - valid: True
+    - metadata:
+      - description: transforming wikipedia raw jsons to a single txt file.
+      - topic: NLP, Machine Learning, ETL
+      - input:
+        - 1:
+          - description: a folder containing json files, where each file contains the contents of a wikipedia article
+          - file_type: json
+          - content: NLP training data, raw text
+      - output:
+        - 1:
+          - description: single txt file, containing only raw content of wikipedia pagaes, split into sentences or per article with a newline each, possibly being only a sampled subset for testing.
+          - file_type: txt
+          - content: NLP training data, Word Embeddings training data, raw text
+- https://github.com/veldhub/veld_code__word2vec
+  - [veld_export.yaml](https://github.com/veldhub/veld_code__word2vec/blob/main/veld_export.yaml)
+    - valid: True
+    - metadata:
+      - description: exports a word2vec model to a pkl file containing a python dict, where the keys are words and its values are the learned vectors, represented as high-dimensional numpy arrays.
+      - topic: ETL, NLP, Machine Learning, Word Embeddings
+  - [veld_jupyter_notebook.yaml](https://github.com/veldhub/veld_code__word2vec/blob/main/veld_jupyter_notebook.yaml)
+    - valid: True
+    - metadata:
+      - description: a word2vec jupyter notebook, for quick experiments
+      - topic: NLP, Machine Learning, Word Embeddings
+      - input:
+        - 1:
+          - description: arbitrary storage for word2vec experiments
+          - file_type: word2vec model, txt
+          - content: NLP model, Word Embeddings model, model metadata, NLP training data, Word Embeddings training data, raw text
+      - output:
+        - 1:
+          - description: arbitrary storage for word2vec experiments
+          - file_type: word2vec model, txt
+          - content: NLP model, Word Embeddings model, model metadata, NLP training data, Word Embeddings training data, raw text
+  - [veld_train.yaml](https://github.com/veldhub/veld_code__word2vec/blob/main/veld_train.yaml)
+    - valid: True
+    - metadata:
+      - description: A word2vec training setup
+      - topic: NLP, Machine Learning, Word Embeddings
+      - input:
+        - 1:
+          - description: training data. Must be one single txt file, one sentence per line.
+          - file_type: txt
+          - content: NLP training data, Word Embeddings training data, raw text
+      - output:
+        - 1:
+          - description: self trained Word Embeddings word2vec model
+          - file_type: word2vec model
+          - content: NLP model, Word Embeddings model
+- https://github.com/veldhub/veld_code__wordembeddings_evaluation
+  - [veld_analyse_evaluation.yaml](https://github.com/veldhub/veld_code__wordembeddings_evaluation/blob/main/veld_analyse_evaluation.yaml)
+    - valid: True
+    - metadata:
+      - description: data visualization of all evaluation data. In a jupyter notebook.
+      - topic: NLP, Word Embeddings, Data Visualization
+      - input:
+        - 1:
+          - description: summary of the custom evaluation logic on word embeddings
+          - file_type: yaml
+          - content: Evaluation data
+      - output:
+        - 1:
+          - description: data visualization of all evaluation data, expressed as interactive html
+          - file_type: html
+          - content: data visualization
+        - 2:
+          - description: data visualization of all evaluation data, expressed as png
+          - file_type: png
+          - content: data visualization
+  - [veld_analyse_evaluation_non_interactive.yaml](https://github.com/veldhub/veld_code__wordembeddings_evaluation/blob/main/veld_analyse_evaluation_non_interactive.yaml)
+    - valid: True
+    - metadata:
+      - description: data visualization of all evaluation data. non-interactive version of the juypter code.
+      - topic: NLP, Word Embeddings, Data Visualization
+      - input:
+        - 1:
+          - description: summary of the custom evaluation logic on word embeddings
+          - file_type: yaml
+          - content: evaluation data
+      - output:
+        - 1:
+          - description: data visualization of all evaluation data, expressed as interactive html
+          - file_type: html
+          - content: data visualization
+        - 2:
+          - description: data visualization of all evaluation data, expressed as png
+          - file_type: png
+          - content: data visualization
+  - [veld_eval_fasttext.yaml](https://github.com/veldhub/veld_code__wordembeddings_evaluation/blob/main/veld_eval_fasttext.yaml)
+    - valid: True
+    - metadata:
+      - description: custom evaluation logic on fasttext word embeddings.
+      - topic: NLP, Machine Learning, Evaluation
+      - input:
+        - 1:
+          - file_type: fastText model
+          - content: NLP model, Word Embeddings model
+        - 2:
+          - file_type: yaml
+          - content: metadata
+        - 3:
+          - file_type: yaml
+          - content: NLP gold data
+      - output:
+        - 1:
+          - file_type: yaml
+        - 2:
+          - file_type: txt
+          - content: log
+  - [veld_eval_glove.yaml](https://github.com/veldhub/veld_code__wordembeddings_evaluation/blob/main/veld_eval_glove.yaml)
+    - valid: True
+    - metadata:
+      - description: custom evaluation logic on GloVe word embeddings.
+      - topic: NLP, Machine Learning, Evaluation
+      - input:
+        - 1:
+          - file_type: GloVe model
+          - content: NLP model, Word Embeddings model
+        - 2:
+          - file_type: yaml
+          - content: metadata
+        - 3:
+          - file_type: yaml
+          - content: NLP gold data
+      - output:
+        - 1:
+          - file_type: yaml
+        - 2:
+          - file_type: txt
+          - content: log
+  - [veld_eval_word2vec.yaml](https://github.com/veldhub/veld_code__wordembeddings_evaluation/blob/main/veld_eval_word2vec.yaml)
+    - valid: True
+    - metadata:
+      - description: custom evaluation logic on word2vec word embeddings.
+      - topic: NLP, Machine Learning, Evaluation
+      - input:
+        - 1:
+          - description: word2vec model file to be evaluated
+          - file_type: word2vec model
+          - content: NLP model, word embeddings model
+        - 2:
+          - description: word2vec model metadata
+          - file_type: yaml
+          - content: metadata
+        - 3:
+          - file_type: yaml
+          - content: NLP gold data
+      - output:
+        - 1:
+          - file_type: yaml
+        - 2:
+          - file_type: txt
+          - content: log
+- https://github.com/veldhub/veld_code__wordembeddings_preprocessing
+  - [veld_preprocess_clean.yaml](https://github.com/veldhub/veld_code__wordembeddings_preprocessing/blob/main/veld_preprocess_clean.yaml)
+    - valid: True
+    - metadata:
+      - description: Removes lines that don't reach a threshold regarding the ratio of textual content to non-textual (numbers, special characters) content. Splits output into clean and dirty file.
+      - topic: NLP, Preprocessing, ETL
+      - input:
+        - 1:
+          - file_type: txt
+          - content: raw text
+      - output:
+        - 1:
+          - description: clean lines, where each line's ratio is above the configured threshold
+          - file_type: txt
+          - content: raw text
+        - 2:
+          - description: dirty lines, where each line's ratio is below the configured threshold
+          - file_type: txt
+          - content: raw text
+  - [veld_preprocess_lowercase.yaml](https://github.com/veldhub/veld_code__wordembeddings_preprocessing/blob/main/veld_preprocess_lowercase.yaml)
+    - valid: True
+    - metadata:
+      - description: makes entire text lowercase
+      - topic: NLP, Preprocessing, ETL
+      - input:
+        - 1:
+          - file_type: txt
+          - content: raw text
+      - output:
+        - 1:
+          - file_type: txt
+          - content: raw text
+  - [veld_preprocess_remove_punctuation.yaml](https://github.com/veldhub/veld_code__wordembeddings_preprocessing/blob/main/veld_preprocess_remove_punctuation.yaml)
+    - valid: True
+    - metadata:
+      - description: removes punctuation from text with spaCy pretrained models
+      - topic: NLP, Preprocessing, ETL
+      - input:
+        - 1:
+          - file_type: txt
+          - content: raw text
+      - output:
+        - 1:
+          - file_type: txt
+          - content: raw text
+        - 2:
+          - file_type: txt
+          - content: raw text
+  - [veld_preprocess_sample.yaml](https://github.com/veldhub/veld_code__wordembeddings_preprocessing/blob/main/veld_preprocess_sample.yaml)
+    - valid: True
+    - metadata:
+      - description: takes a random sample of lines from a txt file. Randomness can be set with a seed too
+      - topic: NLP, Preprocessing, ETL
+      - input:
+        - 1:
+          - file_type: txt
+          - content: raw text
+      - output:
+        - 1:
+          - file_type: txt
+          - content: raw text
+  - [veld_preprocess_strip.yaml](https://github.com/veldhub/veld_code__wordembeddings_preprocessing/blob/main/veld_preprocess_strip.yaml)
+    - valid: True
+    - metadata:
+      - description: removes all lines before and after given line numbers
+      - topic: NLP, Preprocessing, ETL
+      - input:
+        - 1:
+          - file_type: txt
+          - content: raw text
+      - output:
+        - 1:
+          - file_type: txt
+          - content: raw text
+- https://github.com/veldhub/veld_code__xmlanntools
+  - [veld_ann2standoff.yaml](https://github.com/veldhub/veld_code__xmlanntools/blob/main/veld_ann2standoff.yaml)
+    - valid: True
+    - metadata:
+      - description: A demo code veld, integrating the ann2standoff script. For more documentation, see: https://github.com/czcorpus/xmlanntools?tab=readme-ov-file#ann2standoff
+      - topic: NLP, ETL
+      - input:
+        - 1:
+          - file_type: conllu, tsv
+        - 2:
+          - file_type: txt
+        - 3:
+          - file_type: ini
+      - output:
+        - 1:
+          - file_type: json
+  - [veld_standoff2xml.yaml](https://github.com/veldhub/veld_code__xmlanntools/blob/main/veld_standoff2xml.yaml)
+    - valid: True
+    - metadata:
+      - description: A demo code veld, integrating the standoff2xml script. For more documentation, see: https://github.com/czcorpus/xmlanntools?tab=readme-ov-file#standoff2xml
+      - topic: NLP, ETL
+      - input:
+        - 1:
+          - file_type: txt
+        - 2:
+          - file_type: json
+        - 3:
+          - file_type: json
+      - output:
+        - 1:
+          - file_type: xml
+  - [veld_tag_ud.yaml](https://github.com/veldhub/veld_code__xmlanntools/blob/main/veld_tag_ud.yaml)
+    - valid: True
+    - metadata:
+      - description: A demo code veld, integrating the tag_ud script. For more documentation, see: https://github.com/czcorpus/xmlanntools?tab=readme-ov-file#tag_ud
+      - topic: NLP, ETL
+      - input:
+        - 1:
+          - file_type: txt
+      - output:
+        - 1:
+          - file_type: tsv, conllu
+  - [veld_xml2standoff.yaml](https://github.com/veldhub/veld_code__xmlanntools/blob/main/veld_xml2standoff.yaml)
+    - valid: True
+    - metadata:
+      - description: A demo code veld, integrating the xml2standoff script. For more documentation, see: https://github.com/czcorpus/xmlanntools?tab=readme-ov-file#xml2standoff
+      - topic: NLP, ETL
+      - input:
+        - 1:
+          - file_type: xml
+      - output:
+        - 1:
+          - file_type: txt
+        - 2:
+          - file_type: json
+  - [veld_xml2vrt.yaml](https://github.com/veldhub/veld_code__xmlanntools/blob/main/veld_xml2vrt.yaml)
+    - valid: True
+    - metadata:
+      - description: A demo code veld, integrating the xml2vrt script. For more documentation, see: https://github.com/czcorpus/xmlanntools?tab=readme-ov-file#xml2vrt
+      - topic: NLP, ETL
+      - input:
+        - 1:
+          - file_type: xml
+        - 2:
+          - file_type: ini
+      - output:
+        - 1:
+          - file_type: xml
+- https://github.com/veldhub/veld_code__xml_xslt_transformer
+  - [veld.yaml](https://github.com/veldhub/veld_code__xml_xslt_transformer/blob/main/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: generic xml / xslt transformation setup.
+      - topic: ETL, Preprocessing
+      - input:
+        - 1:
+          - description: the input xml file or folder containing xml. Note that if var `in_xml_file` is set, this script will only transform that file. If it's not set, it will go through the input folder recursively and create an equivalent output data structure.
+          - file_type: xml
+        - 2:
+          - description: the input xsl file or folder containing xsl
+          - file_type: xslt
+      - output:
+        - 1:
+          - description: output file or folder for converted txt. Note that the var 'out_txt_file' is only respected, when the input is a single xml file. If the input is a folder, the output will be an equivalent data structure and the var 'out_txt_file' is ignored.
+          - file_type: xml, txt
+
+## chain velds
+- https://github.com/veldhub/veld_chain__akp_ner_inference
+  - [veld_infer.yaml](https://github.com/veldhub/veld_chain__akp_ner_inference/blob/main/veld_infer.yaml)
+    - valid: True
+    - metadata:
+      - description: This repo uses self-trained spaCy NER models on the linkedcat dataset to extract entities, which are stored in csv files.
+      - topic: NLP, Machine Learning, Named Entity Recognition
+- https://github.com/veldhub/veld_chain__apis_ner_evaluate_old_models
+  - [veld_evaluate.yaml](https://github.com/veldhub/veld_chain__apis_ner_evaluate_old_models/blob/main/veld_evaluate.yaml)
+    - valid: True
+    - metadata:
+      - description: hard-coded evaluation of several spaCy 2.2.4 models. This chain veld is a wrapper of legacy code.
+      - topic: NLP, Machine Learning, Named Entity Recognition
+- https://github.com/veldhub/veld_chain__apis_ner_transform_to_gold
+  - [veld.yaml](https://github.com/veldhub/veld_chain__apis_ner_transform_to_gold/blob/main/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: Conversion of apis ner model data to harmonized custom json format.
+      - topic: ETL, Data Cleaning
+- https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg
+  - [veld_multichain_all.yaml](https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg/blob/main/veld_multichain_all.yaml)
+    - valid: True
+  - [veld_step1_download_gutenberg_metadata.yaml](https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg/blob/main/veld_step1_download_gutenberg_metadata.yaml)
+    - valid: True
+    - metadata:
+      - description: Downloads and extracts the project gutenberg metadata.
+      - topic: ETL
+  - [veld_step2_run_server.yaml](https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg/blob/main/veld_step2_run_server.yaml)
+    - valid: True
+    - metadata:
+      - description: An Apache Fuseki instance storing the entire gutenberg metadata.
+      - topic: RDF, triplestore, database
+  - [veld_step3_import_rdf.yaml](https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg/blob/main/veld_step3_import_rdf.yaml)
+    - valid: True
+    - metadata:
+      - description: imports the gutenberg metadata into the Fuseki triplestore.
+      - topic: ETL, RDF, triplestore
+  - [veld_step4_query_books_urls.yaml](https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg/blob/main/veld_step4_query_books_urls.yaml)
+    - valid: True
+    - metadata:
+      - description: Exports a csv file containing download links and file names of all german books that have no TEI files, but a txt, which will be used for automatic TEI generation further downstream.
+      - topic: ETL, RDF, triplestore
+  - [veld_step5_download_gutenberg_books.yaml](https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg/blob/main/veld_step5_download_gutenberg_books.yaml)
+    - valid: True
+    - metadata:
+      - description: Downlaods all german books without TEI, as designated by the previously generated csv.
+      - topic: ETL
+  - [veld_step6_convert_books_to_teitok.yaml](https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg/blob/main/veld_step6_convert_books_to_teitok.yaml)
+    - valid: True
+    - metadata:
+      - description: Automatic creation of tokenized TEI files of downloaded txt books
+      - topic: NLP, Grammatical Annotation, Universal Dependencies, Tokenization, Lemmatization, Part Of Speech, Dependency Parsing
+- https://github.com/veldhub/veld_chain__compare_tokenizations
+  - [code/veld_code__jupyter_analysis/veld.yaml](https://github.com/veldhub/veld_chain__compare_tokenizations/blob/main/code/veld_code__jupyter_analysis/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: template veld code repo for a juptyer notebook
+  - [veld_step_1_download.yaml](https://github.com/veldhub/veld_chain__compare_tokenizations/blob/main/veld_step_1_download.yaml)
+    - valid: False, non-optional value: '<SCALAR> | {<SCALAR>}' missing at: /x-veld/chain/topic/
+  - [veld_step_2_xmlanntools.yaml](https://github.com/veldhub/veld_chain__compare_tokenizations/blob/main/veld_step_2_xmlanntools.yaml)
+    - valid: False, non-optional value: '<SCALAR> | {<SCALAR>}' missing at: /x-veld/chain/topic/
+  - [veld_step_3_teitok.yaml](https://github.com/veldhub/veld_chain__compare_tokenizations/blob/main/veld_step_3_teitok.yaml)
+    - valid: False, non-optional value: '<SCALAR> | {<SCALAR>}' missing at: /x-veld/chain/topic/
+  - [veld_step_4_jupyter_analysis.yaml](https://github.com/veldhub/veld_chain__compare_tokenizations/blob/main/veld_step_4_jupyter_analysis.yaml)
+    - valid: False, non-optional value: '<SCALAR> | {<SCALAR>}' missing at: /x-veld/chain/topic/
+  - [veld_step_all.yaml](https://github.com/veldhub/veld_chain__compare_tokenizations/blob/main/veld_step_all.yaml)
+    - valid: False, non-optional value: '<SCALAR> | {<SCALAR>}' missing at: /x-veld/chain/topic/
+- https://github.com/veldhub/veld_chain__demo_conllueditor
+  - [veld.yaml](https://github.com/veldhub/veld_chain__demo_conllueditor/blob/main/veld.yaml)
+    - valid: True
+    - metadata:
+      - description: an example chain using the veldified version of https://github.com/Orange-OpenSource/conllueditor on sample data.
+      - topic: NLP, Universal Dependencies, Tokenization, Lemmatization, Part Of Speech, Dependency Parsing, Grammatical Annotation
+- https://github.com/veldhub/veld_chain__demo_downloader
+  - [veld_demo_01__single_download.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_01__single_download.yaml)
+    - valid: True
+    - metadata:
+      - description: chain demonstrating download from a single url without any other configuration.
+      - topic: demo
+  - [veld_demo_02__single_download__designate_file_name.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_02__single_download__designate_file_name.yaml)
+    - valid: True
+    - metadata:
+      - description: chain demonstrating download from a single url where a designated output file name is given.
+      - topic: demo
+  - [veld_demo_03__single_download__extract.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_03__single_download__extract.yaml)
+    - valid: True
+    - metadata:
+      - description: chain demonstrating download from a single url where the downloaded file is an archive which will be automatically extracted.
+      - topic: demo
+  - [veld_demo_04__single_download__designate_file_name__extract.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_04__single_download__designate_file_name__extract.yaml)
+    - valid: True
+    - metadata:
+      - description: chain demonstrating download from a single url where a designated output file name is given, and it is an archive which will be automatically extracted.
+      - topic: demo
+  - [veld_demo_05__csv_bulk_download.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_05__csv_bulk_download.yaml)
+    - valid: True
+    - metadata:
+      - description: chain demonstrating bulk download from a csv without any other configuration.
+      - topic: demo
+  - [veld_demo_06__csv_bulk_download__designate_file_name.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_06__csv_bulk_download__designate_file_name.yaml)
+    - valid: True
+    - metadata:
+      - description: chain demonstrating bulk download from a csv in which respective designated file names are given to each download link.
+      - topic: demo
+  - [veld_demo_07__csv_bulk_download__extract.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_07__csv_bulk_download__extract.yaml)
+    - valid: True
+    - metadata:
+      - description: chain demonstrating bulk download from a csv in which each download link is an archive which will be automatically extracted.
+      - topic: demo
+  - [veld_demo_08__csv_bulk_download__csv_no_headers.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_08__csv_bulk_download__csv_no_headers.yaml)
+    - valid: True
+    - metadata:
+      - description: chain demonstrating bulk download from a csv without any headers.
+      - topic: demo
+  - [veld_demo_09__csv_bulk_download__designate_file_name__extract__csv_no_headers.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_09__csv_bulk_download__designate_file_name__extract__csv_no_headers.yaml)
+    - valid: True
+    - metadata:
+      - description: chain demonstrating bulk download from a csv in which respective designated file names are given to each download link, where each download link is an archive which will be automatically extracted, and without any headers.
+      - topic: demo
+  - [veld_demo_10__invalid__out_file_and_csv.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_10__invalid__out_file_and_csv.yaml)
+    - valid: True
+    - metadata:
+      - description: invalid chain demonstrating that giving `in_csv_file` and `out_file` at the same time is invalid, since `out_file` relates to single downloads only and not bulk downloads.
+      - topic: demo
+  - [veld_demo_11__invalid__url_and_csv.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_11__invalid__url_and_csv.yaml)
+    - valid: True
+    - metadata:
+      - description: invalid chain demonstrating that giving `in_csv_file` and `url` at the same time is invalid, since `url` relates to single downloads only and not bulk downloads.
+      - topic: demo
+- https://github.com/veldhub/veld_chain__demo_flair
+  - [veld_demo_01_infer.yaml](https://github.com/veldhub/veld_chain__demo_flair/blob/main/veld_demo_01_infer.yaml)
+    - valid: False, root node x-veld missing
+- https://github.com/veldhub/veld_chain__demo_pypi_publisher
+  - [veld_publish.yaml](https://github.com/veldhub/veld_chain__demo_pypi_publisher/blob/main/veld_publish.yaml)
+    - valid: True
+    - metadata:
+      - description: This code veld encapsulates a demo publishing workflow to pypi.org . It uses setuptools and contains a template python module that can be found at ./data/test_python_module/
+- https://github.com/veldhub/veld_chain__demo_teitok-tools
+  - [veld_parseudpipe.yaml](https://github.com/veldhub/veld_chain__demo_teitok-tools/blob/main/veld_parseudpipe.yaml)
+    - valid: True
+    - metadata:
+      - description: This chain veld exemplifies usage of the respective code veld. For more information on the underlying tool and its usage, see: https://github.com/ufal/teitok-tools?tab=readme-ov-file#parseudpipe
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+  - [veld_udpipe2teitok.yaml](https://github.com/veldhub/veld_chain__demo_teitok-tools/blob/main/veld_udpipe2teitok.yaml)
+    - valid: True
+    - metadata:
+      - description: This chain veld exemplifies usage of the respective code veld. For more information on the underlying tool and its usage, see: https://github.com/ufal/teitok-tools?tab=readme-ov-file#udpipe2teitok
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+  - [veld_xmltokenize.yaml](https://github.com/veldhub/veld_chain__demo_teitok-tools/blob/main/veld_xmltokenize.yaml)
+    - valid: True
+    - metadata:
+      - description: This chain veld exemplifies usage of the respective code veld. For more information on the underlying tool and its usage, see: https://github.com/ufal/teitok-tools?tab=readme-ov-file#xmltokenize
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+- https://github.com/veldhub/veld_chain__demo_udipe_ts-vienna-2024
+  - [veld_infer.yaml](https://github.com/veldhub/veld_chain__demo_udipe_ts-vienna-2024/blob/main/veld_infer.yaml)
+    - valid: True
+    - metadata:
+      - description: A demonstration of a VELD chain inferencing on a txt with a self-trained udpipe model
+      - topic: NLP, Universal Dependencies
+  - [veld_train.yaml](https://github.com/veldhub/veld_chain__demo_udipe_ts-vienna-2024/blob/main/veld_train.yaml)
+    - valid: True
+    - metadata:
+      - description: A demonstration of a VELD chain training a udpipe model from scratch
+      - topic: NLP, Universal Dependencies
+- https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch
+  - [veld_step_1_download.yaml](https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch/blob/main/veld_step_1_download.yaml)
+    - valid: True
+    - metadata:
+      - description: Downloads the bible
+      - topic: ETL, Bible Studies
+  - [veld_step_2_preprocess.yaml](https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch/blob/main/veld_step_2_preprocess.yaml)
+    - valid: True
+    - metadata:
+      - description: Preprocesses the bible to be compatible with word embeddings training. This chain does not use a code veld but build context and code that is integrated into the chain repo itself, since the preprocessing is highly specific to this kind of data and the subsequent training.
+      - topic: ETL, NLP, Bible Studies
+  - [veld_step_3_train_fasttext.yaml](https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch/blob/main/veld_step_3_train_fasttext.yaml)
+    - valid: True
+    - metadata:
+      - description: Trains a fasttext model on the bible and exports its vectors as a dict serialized into a pkl file. The training data is rather small and the hyperparameteres are simplistic, in order to demonstrate the reproducibility of this chain rather than claiming any deeper insight into the data's words context.
+      - topic: ETL, NLP, Machine Learning, Word Embeddings, Bible Studies
+  - [veld_step_4_train_glove.yaml](https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch/blob/main/veld_step_4_train_glove.yaml)
+    - valid: True
+    - metadata:
+      - description: Trains a glove model on the bible and exports its vectors as a dict serialized into a pkl file. The training data is rather small and the hyperparameteres are simplistic, in order to demonstrate the reproducibility of this chain rather than claiming any deeper insight into the data's words context.
+      - topic: ETL, NLP, Machine Learning, Word Embeddings, Bible Studies
+  - [veld_step_5_train_word2vec.yaml](https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch/blob/main/veld_step_5_train_word2vec.yaml)
+    - valid: True
+    - metadata:
+      - description: Trains a word2vec model on the bible and exports its vectors as a dict serialized into a pkl file. The training data is rather small and the hyperparameteres are simplistic, in order to demonstrate the reproducibility of this chain rather than claiming any deeper insight into the data's words context.
+      - topic: ETL, NLP, Machine Learning, Word Embeddings, Bible Studies
+  - [veld_step_6_analyse_vectors.yaml](https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch/blob/main/veld_step_6_analyse_vectors.yaml)
+    - valid: True
+    - metadata:
+      - description: Reads in the trained word vectors from their pkl serializations and tests them for plausability on a few selected words which should show intuitive close or distant relations to each other. This chain does not inherit from a code veld but is defined entirely within its containing chain repository since its code and data are highly context-specific.
+After reproducing the entire previous sequences yourself and execution of the notebook, feel free to save the notebook and compare the resulting differences with `git diff ./code/analyse_vectors/notebooks/analyse_vectors.ipynb`, where the reproduced vector similarities will have only slight differences to the record of previously trained ones. This difference is due to randomization within the training, but should be small enough to indicate approximate reproduction.
+      - topic: ETL, NLP, Machine Learning, Word Embeddings, Bible Studies
+  - [veld_step_all.yaml](https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch/blob/main/veld_step_all.yaml)
+    - valid: True
+    - metadata:
+      - description: This is a multi chain that executes all other individual chains in sequential order. Refer to the other veld yaml files for more information on each step.
+      - topic: ETL, NLP, Machine Learning, Word Embeddings, Bible Studies
+- https://github.com/veldhub/veld_chain__demo_xmlanntools
+  - [veld_simple_poetry1_all_steps.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_simple_poetry1_all_steps.yaml)
+    - valid: True
+    - metadata:
+      - description: a multichain aggregating all individual steps of https://github.com/czcorpus/xmlanntools/tree/main/examples#simple_poetry1 into one single chain
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+  - [veld_simple_poetry1_step1_xml2standoff.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_simple_poetry1_step1_xml2standoff.yaml)
+    - valid: True
+    - metadata:
+      - description: A demo chain veld, integrating the xml2standoff script and implementing the first step of the 'Simple_poetry1' example at https://github.com/czcorpus/xmlanntools/tree/main/examples#simple_poetry1 
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+  - [veld_simple_poetry1_step2_tag_ud.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_simple_poetry1_step2_tag_ud.yaml)
+    - valid: True
+    - metadata:
+      - description: A demo chain veld, integrating the tag_ud script and implementing the second step of the 'Simple_poetry1' example at https://github.com/czcorpus/xmlanntools/tree/main/examples#simple_poetry1 
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+  - [veld_simple_poetry1_step3_ann2standoff.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_simple_poetry1_step3_ann2standoff.yaml)
+    - valid: True
+    - metadata:
+      - description: A demo chain veld, integrating the ann2standoff script and implementing the third step of the 'Simple_poetry1' example at https://github.com/czcorpus/xmlanntools/tree/main/examples#simple_poetry1 
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+  - [veld_simple_poetry1_step4_standoff2xml.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_simple_poetry1_step4_standoff2xml.yaml)
+    - valid: True
+    - metadata:
+      - description: A demo chain veld, integrating the standoff2xml script and implementing the fourth step of the 'Simple_poetry1' example at https://github.com/czcorpus/xmlanntools/tree/main/examples#simple_poetry1 
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+  - [veld_simple_poetry1_step5_xml2vrt.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_simple_poetry1_step5_xml2vrt.yaml)
+    - valid: True
+    - metadata:
+      - description: A demo chain veld, integrating the xml2vrt script and implementing the fifth step of the 'Simple_poetry1' example at https://github.com/czcorpus/xmlanntools/tree/main/examples#simple_poetry1 
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+  - [veld_tei_example1_all_steps.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_tei_example1_all_steps.yaml)
+    - valid: True
+    - metadata:
+      - description: a multichain aggregating all individual steps of https://github.com/czcorpus/xmlanntools/tree/main/examples#tei_example1 into one single chain
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+  - [veld_tei_example1_step1_xml2standoff.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_tei_example1_step1_xml2standoff.yaml)
+    - valid: True
+    - metadata:
+      - description: A demo chain veld, integrating the xml2standoff script and implementing the first step of the 'TEI_example1' at https://github.com/czcorpus/xmlanntools/tree/main/examples#tei_example1 
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+  - [veld_tei_example1_step2_tag_ud.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_tei_example1_step2_tag_ud.yaml)
+    - valid: True
+    - metadata:
+      - description: A demo chain veld, integrating the tag_ud script and implementing the second step of the 'TEI_example1' at https://github.com/czcorpus/xmlanntools/tree/main/examples#tei_example1 
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+  - [veld_tei_example1_step3_ann2standoff.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_tei_example1_step3_ann2standoff.yaml)
+    - valid: True
+    - metadata:
+      - description: A demo chain veld, integrating the ann2standoff script and implementing the third step of the 'TEI_example1' at https://github.com/czcorpus/xmlanntools/tree/main/examples#tei_example1 
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+  - [veld_tei_example1_step4_standoff2xml.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_tei_example1_step4_standoff2xml.yaml)
+    - valid: True
+    - metadata:
+      - description: A demo chain veld, integrating the standoff2xml script and implementing the fourth step of the 'TEI_example1' at https://github.com/czcorpus/xmlanntools/tree/main/examples#tei_example1 
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+  - [veld_tei_example1_step5_xml2vrt.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_tei_example1_step5_xml2vrt.yaml)
+    - valid: True
+    - metadata:
+      - description: A demo chain veld, integrating the xml2vrt script and implementing the fifth step of the 'TEI_example1' at https://github.com/czcorpus/xmlanntools/tree/main/examples#tei_example1 
+      - topic: NLP, ETL, Tokenization, Universal Dependencies
+- https://github.com/veldhub/veld_chain__dta_semantic_drift_analysis
+  - [veld_step_1_download.yaml](https://github.com/veldhub/veld_chain__dta_semantic_drift_analysis/blob/main/veld_step_1_download.yaml)
+    - valid: False, non-optional value: '<SCALAR> | {<SCALAR>}' missing at: /x-veld/chain/topic/
+- https://github.com/veldhub/veld_chain__eltec_udpipe_inference
+  - [veld_step_1_preprocess.yaml](https://github.com/veldhub/veld_chain__eltec_udpipe_inference/blob/main/veld_step_1_preprocess.yaml)
+    - valid: True
+    - metadata:
+      - description: xml / xslt transformation of ELTeC data
+      - topic: ETL
+  - [veld_step_2_download_models.yaml](https://github.com/veldhub/veld_chain__eltec_udpipe_inference/blob/main/veld_step_2_download_models.yaml)
+    - valid: True
+    - metadata:
+      - description: udpipe model download
+      - topic: ETL
+  - [veld_step_3_infer.yaml](https://github.com/veldhub/veld_chain__eltec_udpipe_inference/blob/main/veld_step_3_infer.yaml)
+    - valid: True
+    - metadata:
+      - description: udpipe inference setup, reading in preprocessed ELTeC data
+      - topic: NLP, Machine Learning, Tokenization, Lemmatization, Part Of Speech, Dependency Parsing, Universal Dependencies, Grammatical Annotation
+  - [veld_step_4_analyse.yaml](https://github.com/veldhub/veld_chain__eltec_udpipe_inference/blob/main/veld_step_4_analyse.yaml)
+    - valid: True
+    - metadata:
+      - description: chain to analyse the conllu data which was inferenced by udpipe on several ELTeC corpora.
+      - topic: NLP, Machine Learning, Tokenization, Lemmatization, Part Of Speech, Dependency Parsing, Universal Dependencies, Grammatical Annotation
+  - [veld_step_5_inspect_with_conllueditor.yaml](https://github.com/veldhub/veld_chain__eltec_udpipe_inference/blob/main/veld_step_5_inspect_with_conllueditor.yaml)
+    - valid: True
+    - metadata:
+      - description: inspecting the conllu files with conllueditor.
+      - topic: NLP, Universal Dependencies, Tokenization, Lemmatization, Part Of Speech, Dependency Parsing, Grammatical Annotation
+  - [veld_step_all.yaml](https://github.com/veldhub/veld_chain__eltec_udpipe_inference/blob/main/veld_step_all.yaml)
+    - valid: True
+    - metadata:
+      - description: An aggregating chain, reusing and referencing all individual chains in a sequential processing
+      - topic: ETL, NLP, Machine Learning, Tokenization, Lemmatization, Part Of Speech, Dependency Parsing, Universal Dependencies, Grammatical Annotation
+- https://github.com/veldhub/veld_chain__gutenberg_triplestore
+  - [veld_download_gutenberg_metadata.yaml](https://github.com/veldhub/veld_chain__gutenberg_triplestore/blob/main/veld_download_gutenberg_metadata.yaml)
+    - valid: True
+    - metadata:
+      - description: Downloads the entire gutenberg metadata RDF/XML file and extracts it
+      - topic: ETL
+  - [veld_export.yaml](https://github.com/veldhub/veld_chain__gutenberg_triplestore/blob/main/veld_export.yaml)
+    - valid: True
+    - metadata:
+      - description: Given rq (sparql query) files, this chain exports data from Apache Fuseki triplestore into json files.
+      - topic: ETL, RDF, triplestore
+  - [veld_import_rdf.yaml](https://github.com/veldhub/veld_chain__gutenberg_triplestore/blob/main/veld_import_rdf.yaml)
+    - valid: True
+    - metadata:
+      - description: Imports the Gutenberg RDF/XML data into the Apache Fuseki triplestore
+      - topic: ETL, RDF, triplestore
+  - [veld_run_server.yaml](https://github.com/veldhub/veld_chain__gutenberg_triplestore/blob/main/veld_run_server.yaml)
+    - valid: True
+    - metadata:
+      - description: Runs an Apache Fuseki triplestore. Configuration can be adjusted with the respective shiro.ini file, of which there is a default integrated into this chain veld.
+      - topic: RDF, triplestore
+- https://github.com/veldhub/veld_chain__mara_load_and_publish_models
+  - [veld_publish_to_hf.yaml](https://github.com/veldhub/veld_chain__mara_load_and_publish_models/blob/main/veld_publish_to_hf.yaml)
+    - valid: True
+    - metadata:
+      - description: publish SpaCy text classification models trained during the MARA project to huggingface
+      - topic: NLP
+- https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
+  - [veld_analyse_evaluation.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_analyse_evaluation.yaml)
+    - valid: True
+    - metadata:
+      - description: data visualization of all evaluation data. In a jupyter notebook.
+      - topic: NLP, Word Embeddings, Data Visualization
+  - [veld_analyse_evaluation_non_interactive.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_analyse_evaluation_non_interactive.yaml)
+    - valid: True
+    - metadata:
+      - description: data visualization of all evaluation data. non-interactive version of the juypter code.
+      - topic: NLP, Word Embeddings, Data Visualization
+  - [veld_eval_fasttext.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_eval_fasttext.yaml)
+    - valid: True
+    - metadata:
+      - description: custom evaluation logic on fasttext word embeddings.
+      - topic: NLP, Machine Learning, Evaluation
+  - [veld_eval_glove.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_eval_glove.yaml)
+    - valid: True
+  - [veld_eval_word2vec.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_eval_word2vec.yaml)
+    - valid: True
+  - [veld_jupyter_notebook_fasttext.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_jupyter_notebook_fasttext.yaml)
+    - valid: True
+  - [veld_jupyter_notebook_glove.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_jupyter_notebook_glove.yaml)
+    - valid: True
+  - [veld_jupyter_notebook_word2vec.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_jupyter_notebook_word2vec.yaml)
+    - valid: True
+  - [veld_preprocess_clean.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_preprocess_clean.yaml)
+    - valid: True
+    - metadata:
+      - description: Removes lines that don't reach a threshold regarding the ratio of textual content to non-textual (numbers, special characters) content.
+      - topic: NLP, Preprocessing, ETL
+  - [veld_preprocess_lowercase.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_preprocess_lowercase.yaml)
+    - valid: True
+    - metadata:
+      - description: makes entire text lowercase
+      - topic: NLP, Preprocessing, ETL
+  - [veld_preprocess_remove_punctuation.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_preprocess_remove_punctuation.yaml)
+    - valid: True
+    - metadata:
+      - description: removes punctuation from text with spaCy pretrained models
+      - topic: NLP, Preprocessing, ETL
+  - [veld_preprocess_sample.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_preprocess_sample.yaml)
+    - valid: True
+    - metadata:
+      - description: takes a random sample of lines from a txt file. Randomness can be set with a seed too
+      - topic: NLP, Preprocessing, ETL
+  - [veld_preprocess_strip.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_preprocess_strip.yaml)
+    - valid: True
+    - metadata:
+      - description: removes all lines before and after given line numbers
+      - topic: NLP, Preprocessing, ETL
+  - [veld_train_fasttext.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_train_fasttext.yaml)
+    - valid: True
+    - metadata:
+      - description: A fasttext training setup.
+      - topic: NLP, Machine Learning, Word Embeddings
+  - [veld_train_glove.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_train_glove.yaml)
+    - valid: True
+    - metadata:
+      - description: A GloVe training setup.
+      - topic: NLP, Machine Learning, Word Embeddings
+  - [veld_train_word2vec.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_train_word2vec.yaml)
+    - valid: True
+    - metadata:
+      - description: A word2vec training setup
+      - topic: NLP, Machine Learning, Word Embeddings
+- https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
+  - [veld_playground_jupyter_notebook_fasttext.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_playground_jupyter_notebook_fasttext.yaml)
+    - valid: True
+    - metadata:
+      - description: jupyter notebook for playing with fasttext models
+      - topic: NLP
+  - [veld_playground_jupyter_notebook_glove.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_playground_jupyter_notebook_glove.yaml)
+    - valid: True
+    - metadata:
+      - description: jupyter notebook for playing with glove models
+      - topic: NLP
+  - [veld_playground_jupyter_notebook_word2vec.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_playground_jupyter_notebook_word2vec.yaml)
+    - valid: True
+    - metadata:
+      - description: jupyter notebook for playing with word2vec models
+      - topic: NLP
+  - [veld_step_01_preprocess_download_and_extract.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_01_preprocess_download_and_extract.yaml)
+    - valid: True
+    - metadata:
+      - description: downloading wikipedia archive and extracting each article to a json file.
+      - topic: NLP, ETL
+  - [veld_step_02_preprocess_transform_wiki_json_to_txt.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_02_preprocess_transform_wiki_json_to_txt.yaml)
+    - valid: True
+    - metadata:
+      - description: transforming wikipedia jsons to a single txt file.
+      - topic: NLP, ETL
+  - [veld_step_03_preprocess_lowercase.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_03_preprocess_lowercase.yaml)
+    - valid: True
+    - metadata:
+      - description: preprocessing by making the entire text lowercase.
+      - topic: NLP, ETL
+  - [veld_step_04_preprocess_remove_punctuation.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_04_preprocess_remove_punctuation.yaml)
+    - valid: True
+    - metadata:
+      - description: preprocessing by removing punctuation of the entire text.
+      - topic: NLP, ETL
+  - [veld_step_05_train_fasttext.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_05_train_fasttext.yaml)
+    - valid: True
+    - metadata:
+      - description: training a fasttext model on wikipediaa
+      - topic: NLP
+  - [veld_step_06_train_word2vec.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_06_train_word2vec.yaml)
+    - valid: True
+    - metadata:
+      - description: training a word2vec model on wikipediaa
+      - topic: NLP
+  - [veld_step_07_train_glove.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_07_train_glove.yaml)
+    - valid: True
+    - metadata:
+      - description: training a glove model on wikipediaa
+      - topic: NLP
+  - [veld_step_08_eval_fasttext.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_08_eval_fasttext.yaml)
+    - valid: True
+    - metadata:
+      - description: evaluate fasttext model against evaluation gold data
+      - topic: NLP, Evaluation
+  - [veld_step_09_eval_word2vec.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_09_eval_word2vec.yaml)
+    - valid: True
+    - metadata:
+      - description: evaluate word2vec model against evaluation gold data
+      - topic: NLP, Evaluation
+  - [veld_step_10_eval_glove.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_10_eval_glove.yaml)
+    - valid: True
+    - metadata:
+      - description: evaluate glove model against evaluation gold data
+      - topic: NLP, Evaluation
+  - [veld_step_11_analyse_evaluation.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_11_analyse_evaluation.yaml)
+    - valid: True
+    - metadata:
+      - description: chain of analysing and evaluating models trained on wikipedia
+      - topic: NLP, Evaluation
+  - [veld_step_all_multi_chain.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_all_multi_chain.yaml)
+    - valid: True
+    - metadata:
+      - description: An entire multi chain, going through everything (fetching, preprocessing, training, evaluation in one service. This chain is composed of the other chains and is rather meant as a demonstration of the entire setup
+      - topic: NLP
+- https://github.com/veldhub/veld_chain__train_spacy_apis_ner
+  - [veld_analysis.yaml](https://github.com/veldhub/veld_chain__train_spacy_apis_ner/blob/main/veld_analysis.yaml)
+    - valid: True
+    - metadata:
+      - description: Analyses out-of vocabulary occurrences of training data.
+      - topic: NLP, Machine Learning, Named Entity Recognition, Analysis
+  - [veld_convert.yaml](https://github.com/veldhub/veld_chain__train_spacy_apis_ner/blob/main/veld_convert.yaml)
+    - valid: True
+    - metadata:
+      - description: Cleaning and converting json into spaCy docbin
+      - topic: ETL, NLP, Machine Learning
+  - [veld_create_config.yaml](https://github.com/veldhub/veld_chain__train_spacy_apis_ner/blob/main/veld_create_config.yaml)
+    - valid: True
+    - metadata:
+      - description: Creates a spacy training config according to passed arguments. See https://spacy.io/usage/training/#config for the target outcome.
+      - topic: NLP, Machine Learning
+  - [veld_publish_to_hf.yaml](https://github.com/veldhub/veld_chain__train_spacy_apis_ner/blob/main/veld_publish_to_hf.yaml)
+    - valid: True
+    - metadata:
+      - description: Pushing spacy model to huggingface.
+      - topic: NLP
+  - [veld_train.yaml](https://github.com/veldhub/veld_chain__train_spacy_apis_ner/blob/main/veld_train.yaml)
+    - valid: True
+    - metadata:
+      - description: A NER trainig setup, utilizing spaCy 3's config system.
+      - topic: NLP, Machine Learning, Named Entity Recognition
+
+## topic vocab
+- Analysis
+- Bible Studies
+- Data Cleaning
+- Data Visualization
+- Dependency Parsing
+- ETL
+- Evaluation
+- Grammatical Annotation
+- Lemmatization
+- Machine Learning
+- NLP
+- Named Entity Recognition
+- Part Of Speech
+- Preprocessing
+- RDF
+- Testing
+- Tokenization
+- Universal Dependencies
+- Word Embeddings
+- database
+- demo
+- triplestore
+
+## content vocab
+- Evaluation data
+- ML gold data
+- NER data
+- NER gold data
+- NER model
+- NLP data
+- NLP gold data
+- NLP model
+- NLP statistics
+- NLP training data
+- Part Of Speech of text
+- TEI
+- Universal Dependencies of text
+- Word Embeddings
+- Word Embeddings model
+- Word Embeddings training data
+- annotated literature
+- data visualization
+- enriched text
+- evaluation data
+- gold data
+- grammatically annotated text
+- inferenced NLP data
+- lemmatized text
+- lemmatizer
+- linguistic data
+- linguistically enriched text
+- log
+- metadata
+- model metadata
+- natural text
+- newspaper texts
+- raw text
+- spaCy model
+- spacy training config
+- statistics
+- tokenized text
+- tokenizer
+- word embeddings model
+
+## file_type vocab
+- GloVe model
+- bin
+- cfg
+- conllu
+- csv
+- fastText model
+- html
+- ini
+- json
+- png
+- spaCy docbin
+- spaCy model
+- tsv
+- txt
+- udpipe model
+- word2vec model
+- xml
+- xslt
+- yaml
