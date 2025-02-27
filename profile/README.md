@@ -22,15 +22,10 @@ this README serves as the pragmatic aggregation point.
 [file_type vocab](#file_type-vocab)
 
 ## data velds
-- https://github.com/veldhub/veld_code__wikipedia_nlp_preprocessing
-  - [data/wikipedia_json/veld_data_extracted.yaml](https://github.com/veldhub/veld_code__wikipedia_nlp_preprocessing/blob/main/data/wikipedia_json/veld_data_extracted.yaml)
-    - valid: False, elements not allowed: /x-veld/data/topics,contents
-    - used as code veld in:
-      - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
 - https://github.com/veldhub/veld_data__akp_ner_linkedcat
   - [linkedcat/veld.yaml](https://github.com/veldhub/veld_data__akp_ner_linkedcat/blob/main/linkedcat/veld.yaml)
     - valid: True
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__akp_ner_inference
     - metadata:
       - description: Prefered dataset is not this one, but linkedcat2! This dataset was created by applying a custom trained SpaCy NER model an APIS / ÖBL data, on data set 'linkedcat2' at our solr index. The csv file is split into id column, character start index of recognized entity, character end index of entity, label of entity type, and a small context window.
@@ -39,7 +34,7 @@ this README serves as the pragmatic aggregation point.
       - content: NER data, inferenced NLP data
   - [linkedcat2/veld.yaml](https://github.com/veldhub/veld_data__akp_ner_linkedcat/blob/main/linkedcat2/veld.yaml)
     - valid: True
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__akp_ner_inference
     - metadata:
       - description: Prefered dataset is this one, not linkedcat! This dataset was created by applying a custom trained SpaCy NER model an APIS / ÖBL data, on data set 'linkedcat2' at our solr index. The csv file is split into id column, character start index of recognized entity, character end index of entity, label of entity type, and a small context window.
@@ -49,9 +44,9 @@ this README serves as the pragmatic aggregation point.
 - https://github.com/veldhub/veld_data__amc_we_training_data
   - [203_vert_rftt_inhalt_nodup/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: Entire AMC: no metadata, only text, one sentence per line; Created by Hannes Pirker.
@@ -60,9 +55,9 @@ this README serves as the pragmatic aggregation point.
       - content: raw text, newspaper texts
   - [203_vert_rftt_inhalt_nodup__uniq/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: Entire AMC: no metadata, only text, one sentence per line, each sentence made unique by ordering AMC sentences alphabetically and removing dupcliates; Created by Hannes Pirker.
@@ -71,9 +66,9 @@ this README serves as the pragmatic aggregation point.
       - content: raw text, newspaper texts
   - [203_vert_rftt_inhalt_nodup__uniq__stripped/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq__stripped/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: Entire AMC: unique sentence data, cleaned from non-alphanumeric junk before 'A' (anything before line number 54,993) and after 'Z' (anything after line number 521,781,020)
@@ -82,9 +77,9 @@ this README serves as the pragmatic aggregation point.
       - content: raw text, newspaper texts
   - [203_vert_rftt_inhalt_nodup__uniq__stripped__lowercased/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq__stripped__lowercased/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: Entire AMC: unique sentences, stripped from non-alphanumeric lines, lowercased.
@@ -93,9 +88,9 @@ this README serves as the pragmatic aggregation point.
       - content: raw text, newspaper texts
   - [203_vert_rftt_inhalt_nodup__uniq__stripped__lowercased__punctuation_removed/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq__stripped__lowercased__punctuation_removed/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: Entire AMC: unique sentences, stripped from non-alphanumeric lines, lowercased, punctuation removed.
@@ -104,9 +99,9 @@ this README serves as the pragmatic aggregation point.
       - content: raw text, newspaper texts
   - [203_vert_rftt_inhalt_nodup__uniq__stripped__lowercased__punctuation_removed__cleaned/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq__stripped__lowercased__punctuation_removed__cleaned/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: Entire AMC: unique sentences, stripped from non-alphanumeric lines, lowercased, punctuation removed, removed sentences with too many non-alphanumeric characters.
@@ -115,9 +110,9 @@ this README serves as the pragmatic aggregation point.
       - content: raw text, newspaper texts
   - [203_vert_rftt_inhalt_nodup__uniq__stripped__sampled/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq__stripped__sampled/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 10% AMC: stripped from non-alphanumeric lines, 10% sampled.
@@ -126,9 +121,9 @@ this README serves as the pragmatic aggregation point.
       - content: raw text, newspaper texts
   - [203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 10% AMC: stripped from non-alphanumeric lines, 10% sampled, lowercased.
@@ -137,9 +132,9 @@ this README serves as the pragmatic aggregation point.
       - content: raw text, newspaper texts
   - [203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased__punctuation_removed/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased__punctuation_removed/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 10% AMC: stripped from non-alphanumeric lines, 10% sampled, lowercased, punctuation removed.
@@ -148,9 +143,9 @@ this README serves as the pragmatic aggregation point.
       - content: raw text, newspaper texts
   - [203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased__punctuation_removed__cleaned/veld.yaml](https://github.com/veldhub/veld_data__amc_we_training_data/blob/main/203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased__punctuation_removed__cleaned/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 10% AMC: stripped from non-alphanumeric lines, 10% sampled, lowercased, punctuation removed, removed sentences with too many non-alphanumeric characters.
@@ -160,9 +155,9 @@ this README serves as the pragmatic aggregation point.
 - https://github.com/veldhub/veld_data__apis_oebl__ner_gold
   - [data_cleaned/veld.yaml](https://github.com/veldhub/veld_data__apis_oebl__ner_gold/blob/main/data_cleaned/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_spacy_apis_ner
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__apis_ner_transform_to_gold
     - metadata:
       - description: Overlapping entities are removed, index offsets corrected, and duplicates removed. Also texts without any entities are removed too, since it's not known if they don't contain any entities (which often is not true; quite a few of them contain entities) or if the annotators simply didn't go through them (which is more likely, hence they were removed). In the original uncleaned data, some entity types are suffixed with numbers (e.g. `PER-1337`). These were used for identifying entities in a project context, but are probably of less use for NER NLP training. This dataset keeps the identifiers.
@@ -171,9 +166,9 @@ this README serves as the pragmatic aggregation point.
       - content: gold data, NER gold data, NLP gold data
   - [data_cleaned_simplified/veld.yaml](https://github.com/veldhub/veld_data__apis_oebl__ner_gold/blob/main/data_cleaned_simplified/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_spacy_apis_ner
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__apis_ner_transform_to_gold
     - metadata:
       - description: Same as the cleaned data, but with simplified entities (e.g. `PER` instead of `PER-1337`). Probably it's best to use this data set for NER training.
@@ -182,9 +177,9 @@ this README serves as the pragmatic aggregation point.
       - content: gold data, NER gold data, NLP gold data
   - [data_uncleaned/veld.yaml](https://github.com/veldhub/veld_data__apis_oebl__ner_gold/blob/main/data_uncleaned/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_spacy_apis_ner
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__apis_ner_transform_to_gold
     - metadata:
       - description: The original, but united, data coming from APIS / ÖBL.
@@ -194,20 +189,20 @@ this README serves as the pragmatic aggregation point.
 - https://github.com/veldhub/veld_data__apis_spacy_ner_models
   - [m1/model-best/veld.yaml](https://github.com/veldhub/veld_data__apis_spacy_ner_models/blob/main/m1/model-best/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__akp_ner_inference
       - https://github.com/veldhub/veld_chain__train_spacy_apis_ner
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_spacy_apis_ner
     - metadata:
       - file_type: spaCy model
       - content: spaCy model, NLP model
   - [m2/model-best/veld.yaml](https://github.com/veldhub/veld_data__apis_spacy_ner_models/blob/main/m2/model-best/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__akp_ner_inference
       - https://github.com/veldhub/veld_chain__train_spacy_apis_ner
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_spacy_apis_ner
     - metadata:
       - file_type: spaCy model
@@ -215,7 +210,7 @@ this README serves as the pragmatic aggregation point.
 - https://github.com/veldhub/veld_data__demo_inference_input_ts-vienna-2024
   - [veld.yaml](https://github.com/veldhub/veld_data__demo_inference_input_ts-vienna-2024/blob/main/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__demo_udipe_ts-vienna-2024
     - metadata:
       - description: A single txt file, used as inference input to a self-trained updipe model as a demonstration
@@ -225,7 +220,7 @@ this README serves as the pragmatic aggregation point.
 - https://github.com/veldhub/veld_data__demo_train_data_ts-vienna-2024
   - [veld.yaml](https://github.com/veldhub/veld_data__demo_train_data_ts-vienna-2024/blob/main/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__demo_udipe_ts-vienna-2024
     - metadata:
       - description: A single conllu file, used to train a updipe model as a demonstration
@@ -235,7 +230,7 @@ this README serves as the pragmatic aggregation point.
 - https://github.com/veldhub/veld_data__eltec_conllu_stats
   - [veld.yaml](https://github.com/veldhub/veld_data__eltec_conllu_stats/blob/main/veld.yaml)
     - valid: True
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__eltec_udpipe_inference
     - metadata:
       - description: eltec analysis on its conllu data inferenced with udpipe
@@ -245,7 +240,7 @@ this README serves as the pragmatic aggregation point.
 - https://github.com/veldhub/veld_data__eltec_original_selection
   - [veld.yaml](https://github.com/veldhub/veld_data__eltec_original_selection/blob/main/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__eltec_udpipe_inference
     - metadata:
       - description: parent git repo that integrates various ELTeC corpora as submodules for downstream processing.
@@ -254,7 +249,7 @@ this README serves as the pragmatic aggregation point.
 - https://github.com/veldhub/veld_data__fasttext_models
   - [m1/veld.yaml](https://github.com/veldhub/veld_data__fasttext_models/blob/main/m1/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: test training
@@ -262,7 +257,7 @@ this README serves as the pragmatic aggregation point.
       - file_type: fastText model
   - [m3/veld.yaml](https://github.com/veldhub/veld_data__fasttext_models/blob/main/m3/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 10% AMC model
@@ -270,7 +265,7 @@ this README serves as the pragmatic aggregation point.
       - file_type: fastText model
   - [m4/veld.yaml](https://github.com/veldhub/veld_data__fasttext_models/blob/main/m4/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 10% AMC model
@@ -278,7 +273,7 @@ this README serves as the pragmatic aggregation point.
       - file_type: fastText model
   - [m5/veld.yaml](https://github.com/veldhub/veld_data__fasttext_models/blob/main/m5/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 10% AMC model
@@ -286,7 +281,7 @@ this README serves as the pragmatic aggregation point.
       - file_type: fastText model
   - [m6/veld.yaml](https://github.com/veldhub/veld_data__fasttext_models/blob/main/m6/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 100% AMC model
@@ -294,7 +289,7 @@ this README serves as the pragmatic aggregation point.
       - file_type: fastText model
   - [m7/veld.yaml](https://github.com/veldhub/veld_data__fasttext_models/blob/main/m7/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 100% AMC model
@@ -302,7 +297,7 @@ this README serves as the pragmatic aggregation point.
       - file_type: fastText model
   - [m8/veld.yaml](https://github.com/veldhub/veld_data__fasttext_models/blob/main/m8/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 100% AMC model
@@ -310,7 +305,7 @@ this README serves as the pragmatic aggregation point.
       - file_type: fastText model
   - [m9/veld.yaml](https://github.com/veldhub/veld_data__fasttext_models/blob/main/m9/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 100% AMC model
@@ -319,9 +314,9 @@ this README serves as the pragmatic aggregation point.
 - https://github.com/veldhub/veld_data__glove_models
   - [m1/veld.yaml](https://github.com/veldhub/veld_data__glove_models/blob/main/m1/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: glove test model
@@ -329,9 +324,9 @@ this README serves as the pragmatic aggregation point.
       - file_type: GloVe model, bin, txt
   - [m3/veld.yaml](https://github.com/veldhub/veld_data__glove_models/blob/main/m3/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 1% AMC model
@@ -340,9 +335,9 @@ this README serves as the pragmatic aggregation point.
 - https://github.com/veldhub/veld_data__word2vec_models
   - [m3/veld.yaml](https://github.com/veldhub/veld_data__word2vec_models/blob/main/m3/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 10% AMC model
@@ -350,9 +345,9 @@ this README serves as the pragmatic aggregation point.
       - file_type: word2vec model
   - [m4/veld.yaml](https://github.com/veldhub/veld_data__word2vec_models/blob/main/m4/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 10% AMC model
@@ -360,9 +355,9 @@ this README serves as the pragmatic aggregation point.
       - file_type: word2vec model
   - [m5/veld.yaml](https://github.com/veldhub/veld_data__word2vec_models/blob/main/m5/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 10% AMC model
@@ -370,9 +365,9 @@ this README serves as the pragmatic aggregation point.
       - file_type: word2vec model
   - [m6/veld.yaml](https://github.com/veldhub/veld_data__word2vec_models/blob/main/m6/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 100% AMC model
@@ -380,9 +375,9 @@ this README serves as the pragmatic aggregation point.
       - file_type: word2vec model
   - [m7/veld.yaml](https://github.com/veldhub/veld_data__word2vec_models/blob/main/m7/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 100% AMC model
@@ -390,9 +385,9 @@ this README serves as the pragmatic aggregation point.
       - file_type: word2vec model
   - [m8/veld.yaml](https://github.com/veldhub/veld_data__word2vec_models/blob/main/m8/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 100% AMC model
@@ -400,9 +395,9 @@ this README serves as the pragmatic aggregation point.
       - file_type: word2vec model
   - [m9/veld.yaml](https://github.com/veldhub/veld_data__word2vec_models/blob/main/m9/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
     - metadata:
       - description: 100% AMC model
@@ -411,10 +406,10 @@ this README serves as the pragmatic aggregation point.
 - https://github.com/veldhub/veld_data__wordembeddings_evaluation
   - [evaluation_gold_data/capitalized/veld.yaml](https://github.com/veldhub/veld_data__wordembeddings_evaluation/blob/main/evaluation_gold_data/capitalized/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
     - metadata:
@@ -424,10 +419,10 @@ this README serves as the pragmatic aggregation point.
       - content: evaluation data, NLP gold data
   - [evaluation_gold_data/lowercase/veld.yaml](https://github.com/veldhub/veld_data__wordembeddings_evaluation/blob/main/evaluation_gold_data/lowercase/veld.yaml)
     - valid: True
-    - was input veld in:
+    - is contained as input veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
-    - was output veld of:
+    - is contained as output veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
     - metadata:
@@ -435,6 +430,11 @@ this README serves as the pragmatic aggregation point.
       - topic: NLP, Word Embeddings
       - file_type: yaml
       - content: evaluation data, NLP gold data
+- https://github.com/veldhub/veld_code__wikipedia_nlp_preprocessing
+  - [data/wikipedia_json/veld_data_extracted.yaml](https://github.com/veldhub/veld_code__wikipedia_nlp_preprocessing/blob/main/data/wikipedia_json/veld_data_extracted.yaml)
+    - valid: False, elements not allowed: /x-veld/data/topics,contents
+    - is contained as code veld in:
+      - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
 
 ## code velds
 - https://github.com/veldhub/veld_chain__compare_tokenizations
@@ -458,7 +458,7 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_code__akp_ner_inference
   - [veld_infer.yaml](https://github.com/veldhub/veld_code__akp_ner_inference/blob/main/veld_infer.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__akp_ner_inference
     - metadata:
       - description: apply NER models on linkedcat data for usage of the inferenced entites in the AKP project
@@ -475,7 +475,7 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_code__analyse_conllu
   - [veld.yaml](https://github.com/veldhub/veld_code__analyse_conllu/blob/main/veld.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__eltec_udpipe_inference
     - metadata:
       - description: A statistical summary on conllu data, to count linguistic features of a conllu file: - count of total tokens - count of total lemma - count of lemma normalized by token (to put the lemma in relation with token) - count of occurrence of each (Universal Dependencies) part of speech tag Can be adapted to other use cases and made more flexible, but is primarily used in this chain veld: https://github.com/veldhub/veld_chain__eltec_udpipe_inference
@@ -490,7 +490,7 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_code__apache_jena_fuseki
   - [veld_export.yaml](https://github.com/veldhub/veld_code__apache_jena_fuseki/blob/main/veld_export.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg
       - https://github.com/veldhub/veld_chain__gutenberg_triplestore
     - metadata:
@@ -498,7 +498,7 @@ After reproducing the entire previous sequences yourself and execution of the no
       - topic: ETL, RDF, triplestore
   - [veld_import_rdf.yaml](https://github.com/veldhub/veld_code__apache_jena_fuseki/blob/main/veld_import_rdf.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg
       - https://github.com/veldhub/veld_chain__gutenberg_triplestore
     - metadata:
@@ -506,7 +506,7 @@ After reproducing the entire previous sequences yourself and execution of the no
       - topic: ETL, RDF, triplestore, database
   - [veld_run_server.yaml](https://github.com/veldhub/veld_code__apache_jena_fuseki/blob/main/veld_run_server.yaml)
     - valid: False, elements not allowed: /x-veld/code/storage
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg
       - https://github.com/veldhub/veld_chain__gutenberg_triplestore
 - https://github.com/veldhub/veld_code__bert_embeddings
@@ -515,13 +515,13 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_code__conllueditor
   - [veld.yaml](https://github.com/veldhub/veld_code__conllueditor/blob/main/veld.yaml)
     - valid: False, elements not allowed: /x-veld/code/storage
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__demo_conllueditor
       - https://github.com/veldhub/veld_chain__eltec_udpipe_inference
 - https://github.com/veldhub/veld_code__downloader
   - [veld.yaml](https://github.com/veldhub/veld_code__downloader/blob/main/veld.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg
       - https://github.com/veldhub/veld_chain__compare_tokenizations
       - https://github.com/veldhub/veld_chain__demo_downloader
@@ -535,7 +535,7 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_code__fasttext
   - [veld_export.yaml](https://github.com/veldhub/veld_code__fasttext/blob/main/veld_export.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
@@ -544,7 +544,7 @@ After reproducing the entire previous sequences yourself and execution of the no
       - topic: ETL, NLP, Machine Learning, Word Embeddings
   - [veld_jupyter_notebook.yaml](https://github.com/veldhub/veld_code__fasttext/blob/main/veld_jupyter_notebook.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
@@ -553,7 +553,7 @@ After reproducing the entire previous sequences yourself and execution of the no
       - topic: NLP, Machine Learning, Word Embeddings
   - [veld_train.yaml](https://github.com/veldhub/veld_code__fasttext/blob/main/veld_train.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
@@ -577,7 +577,7 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_code__glove
   - [veld_export.yaml](https://github.com/veldhub/veld_code__glove/blob/main/veld_export.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
@@ -586,7 +586,7 @@ After reproducing the entire previous sequences yourself and execution of the no
       - topic: ETL, NLP, Machine Learning, Word Embeddings
   - [veld_jupyter_notebook.yaml](https://github.com/veldhub/veld_code__glove/blob/main/veld_jupyter_notebook.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
@@ -595,7 +595,7 @@ After reproducing the entire previous sequences yourself and execution of the no
       - topic: NLP, Machine Learning, Word Embeddings
   - [veld_train.yaml](https://github.com/veldhub/veld_code__glove/blob/main/veld_train.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
@@ -631,7 +631,7 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_code__pypi_publisher
   - [veld_publish.yaml](https://github.com/veldhub/veld_code__pypi_publisher/blob/main/veld_publish.yaml)
     - valid: False, elements not allowed: /x-veld/code/inputs
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__demo_pypi_publisher
 - https://github.com/veldhub/veld_code__simple_docker_test
   - [veld.yaml](https://github.com/veldhub/veld_code__simple_docker_test/blob/main/veld.yaml)
@@ -642,7 +642,7 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_code__spacy
   - [veld_convert.yaml](https://github.com/veldhub/veld_code__spacy/blob/main/veld_convert.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__train_spacy_apis_ner
     - metadata:
       - description: prepare data for spacy NER training, since spacy expects the entity annotation indices to be precisely at the beginning and end of the words, and also no overlapping entity annotations. Then it converts the data to spaCy docbin, and prepares it for training by splitting it into train, dev, eval subsets, and shuffling them randomly.
@@ -663,7 +663,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - content: log
   - [veld_create_config.yaml](https://github.com/veldhub/veld_code__spacy/blob/main/veld_create_config.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__train_spacy_apis_ner
     - metadata:
       - description: Creating a spacy config by encapsulating `init config` ( https://spacy.io/api/cli#init-config ) and `init fill-config` ( https://spacy.io/api/cli#init-fill-config ) . The output is ai config file used for training; see more here: https://spacy.io/usage/training/#config
@@ -675,7 +675,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - content: spacy training config
   - [veld_publish_to_hf.yaml](https://github.com/veldhub/veld_code__spacy/blob/main/veld_publish_to_hf.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__train_spacy_apis_ner
     - metadata:
       - description: simple service to push spacy models to huggingface. Important: Only works from spacy v3.* onwards!
@@ -686,7 +686,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - content: NLP model
   - [veld_train.yaml](https://github.com/veldhub/veld_code__spacy/blob/main/veld_train.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__train_spacy_apis_ner
     - metadata:
       - description: A spacy trainig setup, utilizing spacy v3's config system.
@@ -720,7 +720,7 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_code__teitok-tools
   - [veld_parseudpipe.yaml](https://github.com/veldhub/veld_code__teitok-tools/blob/main/veld_parseudpipe.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg
       - https://github.com/veldhub/veld_chain__compare_tokenizations
       - https://github.com/veldhub/veld_chain__demo_teitok-tools
@@ -735,7 +735,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - file_type: xml
   - [veld_udpipe2teitok.yaml](https://github.com/veldhub/veld_code__teitok-tools/blob/main/veld_udpipe2teitok.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg
       - https://github.com/veldhub/veld_chain__compare_tokenizations
       - https://github.com/veldhub/veld_chain__demo_teitok-tools
@@ -744,7 +744,7 @@ After reproducing the entire previous sequences yourself and execution of the no
       - topic: NLP, Grammatical Annotation, Universal Dependencies, Tokenization, Lemmatization, Part Of Speech, Dependency Parsing
   - [veld_xmltokenize.yaml](https://github.com/veldhub/veld_code__teitok-tools/blob/main/veld_xmltokenize.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg
       - https://github.com/veldhub/veld_chain__compare_tokenizations
       - https://github.com/veldhub/veld_chain__demo_teitok-tools
@@ -762,7 +762,7 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_code__udpipe
   - [veld_infer.yaml](https://github.com/veldhub/veld_code__udpipe/blob/main/veld_infer.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__demo_udipe_ts-vienna-2024
       - https://github.com/veldhub/veld_chain__eltec_udpipe_inference
     - metadata:
@@ -783,7 +783,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - content: inferenced NLP data, tokenized text, lemmatized text, Part Of Speech of text, Universal Dependencies of text, grammatically annotated text, linguistic data
   - [veld_train.yaml](https://github.com/veldhub/veld_code__udpipe/blob/main/veld_train.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__demo_udipe_ts-vienna-2024
       - https://github.com/veldhub/veld_chain__eltec_udpipe_inference
     - metadata:
@@ -800,7 +800,7 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_code__wikipedia_nlp_preprocessing
   - [veld_download_and_extract.yaml](https://github.com/veldhub/veld_code__wikipedia_nlp_preprocessing/blob/main/veld_download_and_extract.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
     - metadata:
       - description: downloading wikipedia archive and extracting each article to a json file.
@@ -812,7 +812,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - content: NLP training data, raw text
   - [veld_transform_wiki_json_to_txt.yaml](https://github.com/veldhub/veld_code__wikipedia_nlp_preprocessing/blob/main/veld_transform_wiki_json_to_txt.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
     - metadata:
       - description: transforming wikipedia raw jsons to a single txt file.
@@ -830,7 +830,7 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_code__word2vec
   - [veld_export.yaml](https://github.com/veldhub/veld_code__word2vec/blob/main/veld_export.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
@@ -839,7 +839,7 @@ After reproducing the entire previous sequences yourself and execution of the no
       - topic: ETL, NLP, Machine Learning, Word Embeddings
   - [veld_jupyter_notebook.yaml](https://github.com/veldhub/veld_code__word2vec/blob/main/veld_jupyter_notebook.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
@@ -858,7 +858,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - content: NLP model, Word Embeddings model, model metadata, NLP training data, Word Embeddings training data, raw text
   - [veld_train.yaml](https://github.com/veldhub/veld_code__word2vec/blob/main/veld_train.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
@@ -878,7 +878,7 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_code__wordembeddings_evaluation
   - [veld_analyse_evaluation.yaml](https://github.com/veldhub/veld_code__wordembeddings_evaluation/blob/main/veld_analyse_evaluation.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
     - metadata:
@@ -900,7 +900,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - content: data visualization
   - [veld_analyse_evaluation_non_interactive.yaml](https://github.com/veldhub/veld_code__wordembeddings_evaluation/blob/main/veld_analyse_evaluation_non_interactive.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
     - metadata:
@@ -922,7 +922,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - content: data visualization
   - [veld_eval_fasttext.yaml](https://github.com/veldhub/veld_code__wordembeddings_evaluation/blob/main/veld_eval_fasttext.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
     - metadata:
@@ -946,7 +946,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - content: log
   - [veld_eval_glove.yaml](https://github.com/veldhub/veld_code__wordembeddings_evaluation/blob/main/veld_eval_glove.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
     - metadata:
@@ -970,7 +970,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - content: log
   - [veld_eval_word2vec.yaml](https://github.com/veldhub/veld_code__wordembeddings_evaluation/blob/main/veld_eval_word2vec.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
     - metadata:
@@ -997,7 +997,7 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_code__wordembeddings_preprocessing
   - [veld_preprocess_clean.yaml](https://github.com/veldhub/veld_code__wordembeddings_preprocessing/blob/main/veld_preprocess_clean.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
     - metadata:
@@ -1018,7 +1018,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - content: raw text
   - [veld_preprocess_lowercase.yaml](https://github.com/veldhub/veld_code__wordembeddings_preprocessing/blob/main/veld_preprocess_lowercase.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
     - metadata:
@@ -1034,7 +1034,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - content: raw text
   - [veld_preprocess_remove_punctuation.yaml](https://github.com/veldhub/veld_code__wordembeddings_preprocessing/blob/main/veld_preprocess_remove_punctuation.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
     - metadata:
@@ -1053,7 +1053,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - content: raw text
   - [veld_preprocess_sample.yaml](https://github.com/veldhub/veld_code__wordembeddings_preprocessing/blob/main/veld_preprocess_sample.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
     - metadata:
@@ -1069,7 +1069,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - content: raw text
   - [veld_preprocess_strip.yaml](https://github.com/veldhub/veld_code__wordembeddings_preprocessing/blob/main/veld_preprocess_strip.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
       - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
     - metadata:
@@ -1083,29 +1083,10 @@ After reproducing the entire previous sequences yourself and execution of the no
         - 1:
           - file_type: txt
           - content: raw text
-- https://github.com/veldhub/veld_code__xml_xslt_transformer
-  - [veld.yaml](https://github.com/veldhub/veld_code__xml_xslt_transformer/blob/main/veld.yaml)
-    - valid: True
-    - used as code veld in:
-      - https://github.com/veldhub/veld_chain__eltec_udpipe_inference
-    - metadata:
-      - description: generic xml / xslt transformation setup.
-      - topic: ETL, Preprocessing
-      - input:
-        - 1:
-          - description: the input xml file or folder containing xml. Note that if var `in_xml_file` is set, this script will only transform that file. If it's not set, it will go through the input folder recursively and create an equivalent output data structure.
-          - file_type: xml
-        - 2:
-          - description: the input xsl file or folder containing xsl
-          - file_type: xslt
-      - output:
-        - 1:
-          - description: output file or folder for converted txt. Note that the var 'out_txt_file' is only respected, when the input is a single xml file. If the input is a folder, the output will be an equivalent data structure and the var 'out_txt_file' is ignored.
-          - file_type: xml, txt
 - https://github.com/veldhub/veld_code__xmlanntools
   - [veld_ann2standoff.yaml](https://github.com/veldhub/veld_code__xmlanntools/blob/main/veld_ann2standoff.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__compare_tokenizations
       - https://github.com/veldhub/veld_chain__demo_xmlanntools
     - metadata:
@@ -1123,7 +1104,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - file_type: json
   - [veld_standoff2xml.yaml](https://github.com/veldhub/veld_code__xmlanntools/blob/main/veld_standoff2xml.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__compare_tokenizations
       - https://github.com/veldhub/veld_chain__demo_xmlanntools
     - metadata:
@@ -1141,7 +1122,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - file_type: xml
   - [veld_tag_ud.yaml](https://github.com/veldhub/veld_code__xmlanntools/blob/main/veld_tag_ud.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__compare_tokenizations
       - https://github.com/veldhub/veld_chain__demo_xmlanntools
     - metadata:
@@ -1155,7 +1136,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - file_type: tsv, conllu
   - [veld_xml2standoff.yaml](https://github.com/veldhub/veld_code__xmlanntools/blob/main/veld_xml2standoff.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__compare_tokenizations
       - https://github.com/veldhub/veld_chain__demo_xmlanntools
     - metadata:
@@ -1171,7 +1152,7 @@ After reproducing the entire previous sequences yourself and execution of the no
           - file_type: json
   - [veld_xml2vrt.yaml](https://github.com/veldhub/veld_code__xmlanntools/blob/main/veld_xml2vrt.yaml)
     - valid: True
-    - used as code veld in:
+    - is contained as code veld in:
       - https://github.com/veldhub/veld_chain__compare_tokenizations
       - https://github.com/veldhub/veld_chain__demo_xmlanntools
     - metadata:
@@ -1185,16 +1166,35 @@ After reproducing the entire previous sequences yourself and execution of the no
       - output:
         - 1:
           - file_type: xml
+- https://github.com/veldhub/veld_code__xml_xslt_transformer
+  - [veld.yaml](https://github.com/veldhub/veld_code__xml_xslt_transformer/blob/main/veld.yaml)
+    - valid: True
+    - is contained as code veld in:
+      - https://github.com/veldhub/veld_chain__eltec_udpipe_inference
+    - metadata:
+      - description: generic xml / xslt transformation setup.
+      - topic: ETL, Preprocessing
+      - input:
+        - 1:
+          - description: the input xml file or folder containing xml. Note that if var `in_xml_file` is set, this script will only transform that file. If it's not set, it will go through the input folder recursively and create an equivalent output data structure.
+          - file_type: xml
+        - 2:
+          - description: the input xsl file or folder containing xsl
+          - file_type: xslt
+      - output:
+        - 1:
+          - description: output file or folder for converted txt. Note that the var 'out_txt_file' is only respected, when the input is a single xml file. If the input is a folder, the output will be an equivalent data structure and the var 'out_txt_file' is ignored.
+          - file_type: xml, txt
 
 ## chain velds
 - https://github.com/veldhub/veld_chain__akp_ner_inference
   - [veld_infer.yaml](https://github.com/veldhub/veld_chain__akp_ner_inference/blob/main/veld_infer.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__akp_ner_inference
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__apis_spacy_ner_models
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__akp_ner_linkedcat
     - metadata:
       - description: This repo uses self-trained spaCy NER models on the linkedcat dataset to extract entities, which are stored in csv files.
@@ -1202,9 +1202,9 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_chain__apis_ner_evaluate_old_models
   - [veld_evaluate.yaml](https://github.com/veldhub/veld_chain__apis_ner_evaluate_old_models/blob/main/veld_evaluate.yaml)
     - valid: True
-    - input data velds:
+    - contains input velds:
       - https://gitlab.oeaw.ac.at/acdh-ch/apis/spacy-ner
-    - output data velds:
+    - contains output velds:
       - https://gitlab.oeaw.ac.at/acdh-ch/apis/spacy-ner
     - metadata:
       - description: hard-coded evaluation of several spaCy 2.2.4 models. This chain veld is a wrapper of legacy code.
@@ -1212,9 +1212,9 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_chain__apis_ner_transform_to_gold
   - [veld.yaml](https://github.com/veldhub/veld_chain__apis_ner_transform_to_gold/blob/main/veld.yaml)
     - valid: True
-    - input data velds:
+    - contains input velds:
       - https://gitlab.oeaw.ac.at/acdh-ch/apis/spacy-ner
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__apis_oebl__ner_gold
     - metadata:
       - description: Conversion of apis ner model data to harmonized custom json format.
@@ -1224,42 +1224,42 @@ After reproducing the entire previous sequences yourself and execution of the no
     - valid: True
   - [veld_step1_download_gutenberg_metadata.yaml](https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg/blob/main/veld_step1_download_gutenberg_metadata.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
     - metadata:
       - description: Downloads and extracts the project gutenberg metadata.
       - topic: ETL
   - [veld_step2_run_server.yaml](https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg/blob/main/veld_step2_run_server.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__apache_jena_fuseki
     - metadata:
       - description: An Apache Fuseki instance storing the entire gutenberg metadata.
       - topic: RDF, triplestore, database
   - [veld_step3_import_rdf.yaml](https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg/blob/main/veld_step3_import_rdf.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__apache_jena_fuseki
     - metadata:
       - description: imports the gutenberg metadata into the Fuseki triplestore.
       - topic: ETL, RDF, triplestore
   - [veld_step4_query_books_urls.yaml](https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg/blob/main/veld_step4_query_books_urls.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__apache_jena_fuseki
     - metadata:
       - description: Exports a csv file containing download links and file names of all german books that have no TEI files, but a txt, which will be used for automatic TEI generation further downstream.
       - topic: ETL, RDF, triplestore
   - [veld_step5_download_gutenberg_books.yaml](https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg/blob/main/veld_step5_download_gutenberg_books.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
     - metadata:
       - description: Downlaods all german books without TEI, as designated by the previously generated csv.
       - topic: ETL
   - [veld_step6_convert_books_to_teitok.yaml](https://github.com/veldhub/veld_chain__automatic_tei-ification_of_gutenberg/blob/main/veld_step6_convert_books_to_teitok.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__teitok-tools
     - metadata:
       - description: Automatic creation of tokenized TEI files of downloaded txt books
@@ -1267,15 +1267,15 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_chain__compare_tokenizations
   - [veld_step_1_download.yaml](https://github.com/veldhub/veld_chain__compare_tokenizations/blob/main/veld_step_1_download.yaml)
     - valid: False, non-optional value: '<SCALAR> | {<SCALAR>}' missing at: /x-veld/chain/topic/
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
   - [veld_step_2_xmlanntools.yaml](https://github.com/veldhub/veld_chain__compare_tokenizations/blob/main/veld_step_2_xmlanntools.yaml)
     - valid: False, non-optional value: '<SCALAR> | {<SCALAR>}' missing at: /x-veld/chain/topic/
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__xmlanntools
   - [veld_step_3_teitok.yaml](https://github.com/veldhub/veld_chain__compare_tokenizations/blob/main/veld_step_3_teitok.yaml)
     - valid: False, non-optional value: '<SCALAR> | {<SCALAR>}' missing at: /x-veld/chain/topic/
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__teitok-tools
   - [veld_step_4_jupyter_analysis.yaml](https://github.com/veldhub/veld_chain__compare_tokenizations/blob/main/veld_step_4_jupyter_analysis.yaml)
     - valid: False, non-optional value: '<SCALAR> | {<SCALAR>}' missing at: /x-veld/chain/topic/
@@ -1284,7 +1284,7 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_chain__demo_conllueditor
   - [veld.yaml](https://github.com/veldhub/veld_chain__demo_conllueditor/blob/main/veld.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__conllueditor
     - metadata:
       - description: an example chain using the veldified version of https://github.com/Orange-OpenSource/conllueditor on sample data.
@@ -1292,77 +1292,77 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_chain__demo_downloader
   - [veld_demo_01__single_download.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_01__single_download.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
     - metadata:
       - description: chain demonstrating download from a single url without any other configuration.
       - topic: demo
   - [veld_demo_02__single_download__designate_file_name.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_02__single_download__designate_file_name.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
     - metadata:
       - description: chain demonstrating download from a single url where a designated output file name is given.
       - topic: demo
   - [veld_demo_03__single_download__extract.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_03__single_download__extract.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
     - metadata:
       - description: chain demonstrating download from a single url where the downloaded file is an archive which will be automatically extracted.
       - topic: demo
   - [veld_demo_04__single_download__designate_file_name__extract.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_04__single_download__designate_file_name__extract.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
     - metadata:
       - description: chain demonstrating download from a single url where a designated output file name is given, and it is an archive which will be automatically extracted.
       - topic: demo
   - [veld_demo_05__csv_bulk_download.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_05__csv_bulk_download.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
     - metadata:
       - description: chain demonstrating bulk download from a csv without any other configuration.
       - topic: demo
   - [veld_demo_06__csv_bulk_download__designate_file_name.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_06__csv_bulk_download__designate_file_name.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
     - metadata:
       - description: chain demonstrating bulk download from a csv in which respective designated file names are given to each download link.
       - topic: demo
   - [veld_demo_07__csv_bulk_download__extract.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_07__csv_bulk_download__extract.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
     - metadata:
       - description: chain demonstrating bulk download from a csv in which each download link is an archive which will be automatically extracted.
       - topic: demo
   - [veld_demo_08__csv_bulk_download__csv_no_headers.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_08__csv_bulk_download__csv_no_headers.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
     - metadata:
       - description: chain demonstrating bulk download from a csv without any headers.
       - topic: demo
   - [veld_demo_09__csv_bulk_download__designate_file_name__extract__csv_no_headers.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_09__csv_bulk_download__designate_file_name__extract__csv_no_headers.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
     - metadata:
       - description: chain demonstrating bulk download from a csv in which respective designated file names are given to each download link, where each download link is an archive which will be automatically extracted, and without any headers.
       - topic: demo
   - [veld_demo_10__invalid__out_file_and_csv.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_10__invalid__out_file_and_csv.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
     - metadata:
       - description: invalid chain demonstrating that giving `in_csv_file` and `out_file` at the same time is invalid, since `out_file` relates to single downloads only and not bulk downloads.
       - topic: demo
   - [veld_demo_11__invalid__url_and_csv.yaml](https://github.com/veldhub/veld_chain__demo_downloader/blob/main/veld_demo_11__invalid__url_and_csv.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
     - metadata:
       - description: invalid chain demonstrating that giving `in_csv_file` and `url` at the same time is invalid, since `url` relates to single downloads only and not bulk downloads.
@@ -1370,28 +1370,28 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_chain__demo_pypi_publisher
   - [veld_publish.yaml](https://github.com/veldhub/veld_chain__demo_pypi_publisher/blob/main/veld_publish.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__pypi_publisher
     - metadata:
       - description: This code veld encapsulates a demo publishing workflow to pypi.org . It uses setuptools and contains a template python module that can be found at ./data/test_python_module/
 - https://github.com/veldhub/veld_chain__demo_teitok-tools
   - [veld_parseudpipe.yaml](https://github.com/veldhub/veld_chain__demo_teitok-tools/blob/main/veld_parseudpipe.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__teitok-tools
     - metadata:
       - description: This chain veld exemplifies usage of the respective code veld. For more information on the underlying tool and its usage, see: https://github.com/ufal/teitok-tools?tab=readme-ov-file#parseudpipe
       - topic: NLP, ETL, Tokenization, Universal Dependencies
   - [veld_udpipe2teitok.yaml](https://github.com/veldhub/veld_chain__demo_teitok-tools/blob/main/veld_udpipe2teitok.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__teitok-tools
     - metadata:
       - description: This chain veld exemplifies usage of the respective code veld. For more information on the underlying tool and its usage, see: https://github.com/ufal/teitok-tools?tab=readme-ov-file#udpipe2teitok
       - topic: NLP, ETL, Tokenization, Universal Dependencies
   - [veld_xmltokenize.yaml](https://github.com/veldhub/veld_chain__demo_teitok-tools/blob/main/veld_xmltokenize.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__teitok-tools
     - metadata:
       - description: This chain veld exemplifies usage of the respective code veld. For more information on the underlying tool and its usage, see: https://github.com/ufal/teitok-tools?tab=readme-ov-file#xmltokenize
@@ -1399,18 +1399,18 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_chain__demo_udipe_ts-vienna-2024
   - [veld_infer.yaml](https://github.com/veldhub/veld_chain__demo_udipe_ts-vienna-2024/blob/main/veld_infer.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__udpipe
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__demo_inference_input_ts-vienna-2024
     - metadata:
       - description: A demonstration of a VELD chain inferencing on a txt with a self-trained udpipe model
       - topic: NLP, Universal Dependencies
   - [veld_train.yaml](https://github.com/veldhub/veld_chain__demo_udipe_ts-vienna-2024/blob/main/veld_train.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__udpipe
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__demo_train_data_ts-vienna-2024
     - metadata:
       - description: A demonstration of a VELD chain training a udpipe model from scratch
@@ -1418,7 +1418,7 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch
   - [veld_step_1_download.yaml](https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch/blob/main/veld_step_1_download.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
     - metadata:
       - description: Downloads the bible
@@ -1430,21 +1430,21 @@ After reproducing the entire previous sequences yourself and execution of the no
       - topic: ETL, NLP, Bible Studies
   - [veld_step_3_train_fasttext.yaml](https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch/blob/main/veld_step_3_train_fasttext.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__fasttext
     - metadata:
       - description: Trains a fasttext model on the bible and exports its vectors as a dict serialized into a pkl file. The training data is rather small and the hyperparameteres are simplistic, in order to demonstrate the reproducibility of this chain rather than claiming any deeper insight into the data's words context.
       - topic: ETL, NLP, Machine Learning, Word Embeddings, Bible Studies
   - [veld_step_4_train_glove.yaml](https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch/blob/main/veld_step_4_train_glove.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__glove
     - metadata:
       - description: Trains a glove model on the bible and exports its vectors as a dict serialized into a pkl file. The training data is rather small and the hyperparameteres are simplistic, in order to demonstrate the reproducibility of this chain rather than claiming any deeper insight into the data's words context.
       - topic: ETL, NLP, Machine Learning, Word Embeddings, Bible Studies
   - [veld_step_5_train_word2vec.yaml](https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch/blob/main/veld_step_5_train_word2vec.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__word2vec
     - metadata:
       - description: Trains a word2vec model on the bible and exports its vectors as a dict serialized into a pkl file. The training data is rather small and the hyperparameteres are simplistic, in order to demonstrate the reproducibility of this chain rather than claiming any deeper insight into the data's words context.
@@ -1462,35 +1462,35 @@ After reproducing the entire previous sequences yourself and execution of the no
       - topic: NLP, ETL, Tokenization, Universal Dependencies
   - [veld_simple_poetry1_step1_xml2standoff.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_simple_poetry1_step1_xml2standoff.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__xmlanntools
     - metadata:
       - description: A demo chain veld, integrating the xml2standoff script and implementing the first step of the 'Simple_poetry1' example at https://github.com/czcorpus/xmlanntools/tree/main/examples#simple_poetry1 
       - topic: NLP, ETL, Tokenization, Universal Dependencies
   - [veld_simple_poetry1_step2_tag_ud.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_simple_poetry1_step2_tag_ud.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__xmlanntools
     - metadata:
       - description: A demo chain veld, integrating the tag_ud script and implementing the second step of the 'Simple_poetry1' example at https://github.com/czcorpus/xmlanntools/tree/main/examples#simple_poetry1 
       - topic: NLP, ETL, Tokenization, Universal Dependencies
   - [veld_simple_poetry1_step3_ann2standoff.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_simple_poetry1_step3_ann2standoff.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__xmlanntools
     - metadata:
       - description: A demo chain veld, integrating the ann2standoff script and implementing the third step of the 'Simple_poetry1' example at https://github.com/czcorpus/xmlanntools/tree/main/examples#simple_poetry1 
       - topic: NLP, ETL, Tokenization, Universal Dependencies
   - [veld_simple_poetry1_step4_standoff2xml.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_simple_poetry1_step4_standoff2xml.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__xmlanntools
     - metadata:
       - description: A demo chain veld, integrating the standoff2xml script and implementing the fourth step of the 'Simple_poetry1' example at https://github.com/czcorpus/xmlanntools/tree/main/examples#simple_poetry1 
       - topic: NLP, ETL, Tokenization, Universal Dependencies
   - [veld_simple_poetry1_step5_xml2vrt.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_simple_poetry1_step5_xml2vrt.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__xmlanntools
     - metadata:
       - description: A demo chain veld, integrating the xml2vrt script and implementing the fifth step of the 'Simple_poetry1' example at https://github.com/czcorpus/xmlanntools/tree/main/examples#simple_poetry1 
@@ -1502,35 +1502,35 @@ After reproducing the entire previous sequences yourself and execution of the no
       - topic: NLP, ETL, Tokenization, Universal Dependencies
   - [veld_tei_example1_step1_xml2standoff.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_tei_example1_step1_xml2standoff.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__xmlanntools
     - metadata:
       - description: A demo chain veld, integrating the xml2standoff script and implementing the first step of the 'TEI_example1' at https://github.com/czcorpus/xmlanntools/tree/main/examples#tei_example1 
       - topic: NLP, ETL, Tokenization, Universal Dependencies
   - [veld_tei_example1_step2_tag_ud.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_tei_example1_step2_tag_ud.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__xmlanntools
     - metadata:
       - description: A demo chain veld, integrating the tag_ud script and implementing the second step of the 'TEI_example1' at https://github.com/czcorpus/xmlanntools/tree/main/examples#tei_example1 
       - topic: NLP, ETL, Tokenization, Universal Dependencies
   - [veld_tei_example1_step3_ann2standoff.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_tei_example1_step3_ann2standoff.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__xmlanntools
     - metadata:
       - description: A demo chain veld, integrating the ann2standoff script and implementing the third step of the 'TEI_example1' at https://github.com/czcorpus/xmlanntools/tree/main/examples#tei_example1 
       - topic: NLP, ETL, Tokenization, Universal Dependencies
   - [veld_tei_example1_step4_standoff2xml.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_tei_example1_step4_standoff2xml.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__xmlanntools
     - metadata:
       - description: A demo chain veld, integrating the standoff2xml script and implementing the fourth step of the 'TEI_example1' at https://github.com/czcorpus/xmlanntools/tree/main/examples#tei_example1 
       - topic: NLP, ETL, Tokenization, Universal Dependencies
   - [veld_tei_example1_step5_xml2vrt.yaml](https://github.com/veldhub/veld_chain__demo_xmlanntools/blob/main/veld_tei_example1_step5_xml2vrt.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__xmlanntools
     - metadata:
       - description: A demo chain veld, integrating the xml2vrt script and implementing the fifth step of the 'TEI_example1' at https://github.com/czcorpus/xmlanntools/tree/main/examples#tei_example1 
@@ -1538,44 +1538,44 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_chain__dta_semantic_drift_analysis
   - [veld_step_1_download.yaml](https://github.com/veldhub/veld_chain__dta_semantic_drift_analysis/blob/main/veld_step_1_download.yaml)
     - valid: False, non-optional value: '<SCALAR> | {<SCALAR>}' missing at: /x-veld/chain/topic/
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
 - https://github.com/veldhub/veld_chain__eltec_udpipe_inference
   - [veld_step_1_preprocess.yaml](https://github.com/veldhub/veld_chain__eltec_udpipe_inference/blob/main/veld_step_1_preprocess.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__xml_xslt_transformer
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__eltec_original_selection
     - metadata:
       - description: xml / xslt transformation of ELTeC data
       - topic: ETL
   - [veld_step_2_download_models.yaml](https://github.com/veldhub/veld_chain__eltec_udpipe_inference/blob/main/veld_step_2_download_models.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
     - metadata:
       - description: udpipe model download
       - topic: ETL
   - [veld_step_3_infer.yaml](https://github.com/veldhub/veld_chain__eltec_udpipe_inference/blob/main/veld_step_3_infer.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__udpipe
     - metadata:
       - description: udpipe inference setup, reading in preprocessed ELTeC data
       - topic: NLP, Machine Learning, Tokenization, Lemmatization, Part Of Speech, Dependency Parsing, Universal Dependencies, Grammatical Annotation
   - [veld_step_4_analyse.yaml](https://github.com/veldhub/veld_chain__eltec_udpipe_inference/blob/main/veld_step_4_analyse.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__analyse_conllu
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__eltec_conllu_stats
     - metadata:
       - description: chain to analyse the conllu data which was inferenced by udpipe on several ELTeC corpora.
       - topic: NLP, Machine Learning, Tokenization, Lemmatization, Part Of Speech, Dependency Parsing, Universal Dependencies, Grammatical Annotation
   - [veld_step_5_inspect_with_conllueditor.yaml](https://github.com/veldhub/veld_chain__eltec_udpipe_inference/blob/main/veld_step_5_inspect_with_conllueditor.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__conllueditor
     - metadata:
       - description: inspecting the conllu files with conllueditor.
@@ -1588,28 +1588,28 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_chain__gutenberg_triplestore
   - [veld_download_gutenberg_metadata.yaml](https://github.com/veldhub/veld_chain__gutenberg_triplestore/blob/main/veld_download_gutenberg_metadata.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__downloader
     - metadata:
       - description: Downloads the entire gutenberg metadata RDF/XML file and extracts it
       - topic: ETL
   - [veld_export.yaml](https://github.com/veldhub/veld_chain__gutenberg_triplestore/blob/main/veld_export.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__apache_jena_fuseki
     - metadata:
       - description: Given rq (sparql query) files, this chain exports data from Apache Fuseki triplestore into json files.
       - topic: ETL, RDF, triplestore
   - [veld_import_rdf.yaml](https://github.com/veldhub/veld_chain__gutenberg_triplestore/blob/main/veld_import_rdf.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__apache_jena_fuseki
     - metadata:
       - description: Imports the Gutenberg RDF/XML data into the Apache Fuseki triplestore
       - topic: ETL, RDF, triplestore
   - [veld_run_server.yaml](https://github.com/veldhub/veld_chain__gutenberg_triplestore/blob/main/veld_run_server.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__apache_jena_fuseki
     - metadata:
       - description: Runs an Apache Fuseki triplestore. Configuration can be adjusted with the respective shiro.ini file, of which there is a default integrated into this chain veld.
@@ -1617,7 +1617,7 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_chain__mara_load_and_publish_models
   - [veld_publish_to_hf.yaml](https://github.com/veldhub/veld_chain__mara_load_and_publish_models/blob/main/veld_publish_to_hf.yaml)
     - valid: True
-    - input data velds:
+    - contains input velds:
       - https://gitlab.oeaw.ac.at/acdh-ch/mara/mara-nlp-suite-internal
     - metadata:
       - description: publish SpaCy text classification models trained during the MARA project to huggingface
@@ -1625,135 +1625,135 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc
   - [veld_analyse_evaluation.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_analyse_evaluation.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wordembeddings_evaluation
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
     - metadata:
       - description: data visualization of all evaluation data. In a jupyter notebook.
       - topic: NLP, Word Embeddings, Data Visualization
   - [veld_analyse_evaluation_non_interactive.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_analyse_evaluation_non_interactive.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wordembeddings_evaluation
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
     - metadata:
       - description: data visualization of all evaluation data. non-interactive version of the juypter code.
       - topic: NLP, Word Embeddings, Data Visualization
   - [veld_eval_fasttext.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_eval_fasttext.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wordembeddings_evaluation
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__fasttext_models
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
     - metadata:
       - description: custom evaluation logic on fasttext word embeddings.
       - topic: NLP, Machine Learning, Evaluation
   - [veld_eval_glove.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_eval_glove.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wordembeddings_evaluation
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__glove_models
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
   - [veld_eval_word2vec.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_eval_word2vec.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wordembeddings_evaluation
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__word2vec_models
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
   - [veld_jupyter_notebook_fasttext.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_jupyter_notebook_fasttext.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__fasttext
   - [veld_jupyter_notebook_glove.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_jupyter_notebook_glove.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__glove
   - [veld_jupyter_notebook_word2vec.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_jupyter_notebook_word2vec.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__word2vec
   - [veld_preprocess_lowercase.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_preprocess_lowercase.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wordembeddings_preprocessing
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__amc_we_training_data
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__amc_we_training_data
     - metadata:
       - description: makes entire text lowercase
       - topic: NLP, Preprocessing, ETL
   - [veld_preprocess_remove_punctuation.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_preprocess_remove_punctuation.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wordembeddings_preprocessing
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__amc_we_training_data
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__amc_we_training_data
     - metadata:
       - description: removes punctuation from text with spaCy pretrained models
       - topic: NLP, Preprocessing, ETL
   - [veld_preprocess_sample.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_preprocess_sample.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wordembeddings_preprocessing
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__amc_we_training_data
     - metadata:
       - description: takes a random sample of lines from a txt file. Randomness can be set with a seed too
       - topic: NLP, Preprocessing, ETL
   - [veld_preprocess_strip.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_preprocess_strip.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wordembeddings_preprocessing
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__amc_we_training_data
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__amc_we_training_data
     - metadata:
       - description: removes all lines before and after given line numbers
       - topic: NLP, Preprocessing, ETL
   - [veld_train_fasttext.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_train_fasttext.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__fasttext
     - metadata:
       - description: A fasttext training setup.
       - topic: NLP, Machine Learning, Word Embeddings
   - [veld_train_glove.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_train_glove.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__glove
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__amc_we_training_data
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__glove_models
     - metadata:
       - description: A GloVe training setup.
       - topic: NLP, Machine Learning, Word Embeddings
   - [veld_train_word2vec.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__amc/blob/main/veld_train_word2vec.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__word2vec
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__amc_we_training_data
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__word2vec_models
     - metadata:
       - description: A word2vec training setup
@@ -1761,114 +1761,114 @@ After reproducing the entire previous sequences yourself and execution of the no
 - https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
   - [veld_playground_jupyter_notebook_fasttext.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_playground_jupyter_notebook_fasttext.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__fasttext
     - metadata:
       - description: jupyter notebook for playing with fasttext models
       - topic: NLP
   - [veld_playground_jupyter_notebook_glove.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_playground_jupyter_notebook_glove.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__glove
     - metadata:
       - description: jupyter notebook for playing with glove models
       - topic: NLP
   - [veld_playground_jupyter_notebook_word2vec.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_playground_jupyter_notebook_word2vec.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__word2vec
     - metadata:
       - description: jupyter notebook for playing with word2vec models
       - topic: NLP
   - [veld_step_01_preprocess_download_and_extract.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_01_preprocess_download_and_extract.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wikipedia_nlp_preprocessing
     - metadata:
       - description: downloading wikipedia archive and extracting each article to a json file.
       - topic: NLP, ETL
   - [veld_step_02_preprocess_transform_wiki_json_to_txt.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_02_preprocess_transform_wiki_json_to_txt.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wikipedia_nlp_preprocessing
     - metadata:
       - description: transforming wikipedia jsons to a single txt file.
       - topic: NLP, ETL
   - [veld_step_03_preprocess_lowercase.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_03_preprocess_lowercase.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wordembeddings_preprocessing
     - metadata:
       - description: preprocessing by making the entire text lowercase.
       - topic: NLP, ETL
   - [veld_step_04_preprocess_remove_punctuation.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_04_preprocess_remove_punctuation.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wordembeddings_preprocessing
     - metadata:
       - description: preprocessing by removing punctuation of the entire text.
       - topic: NLP, ETL
   - [veld_step_05_train_fasttext.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_05_train_fasttext.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__fasttext
     - metadata:
       - description: training a fasttext model on wikipediaa
       - topic: NLP
   - [veld_step_06_train_word2vec.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_06_train_word2vec.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__word2vec
     - metadata:
       - description: training a word2vec model on wikipediaa
       - topic: NLP
   - [veld_step_07_train_glove.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_07_train_glove.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__glove
     - metadata:
       - description: training a glove model on wikipediaa
       - topic: NLP
   - [veld_step_08_eval_fasttext.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_08_eval_fasttext.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wordembeddings_evaluation
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
     - metadata:
       - description: evaluate fasttext model against evaluation gold data
       - topic: NLP, Evaluation
   - [veld_step_09_eval_word2vec.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_09_eval_word2vec.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wordembeddings_evaluation
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
     - metadata:
       - description: evaluate word2vec model against evaluation gold data
       - topic: NLP, Evaluation
   - [veld_step_10_eval_glove.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_10_eval_glove.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wordembeddings_evaluation
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
     - metadata:
       - description: evaluate glove model against evaluation gold data
       - topic: NLP, Evaluation
   - [veld_step_11_analyse_evaluation.yaml](https://github.com/veldhub/veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia/blob/main/veld_step_11_analyse_evaluation.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__wordembeddings_evaluation
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__wordembeddings_evaluation
     - metadata:
       - description: chain of analysing and evaluating models trained on wikipedia
@@ -1886,34 +1886,34 @@ After reproducing the entire previous sequences yourself and execution of the no
       - topic: NLP, Machine Learning, Named Entity Recognition, Analysis
   - [veld_convert.yaml](https://github.com/veldhub/veld_chain__train_spacy_apis_ner/blob/main/veld_convert.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__spacy
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__apis_oebl__ner_gold
     - metadata:
       - description: Cleaning and converting json into spaCy docbin
       - topic: ETL, NLP, Machine Learning
   - [veld_create_config.yaml](https://github.com/veldhub/veld_chain__train_spacy_apis_ner/blob/main/veld_create_config.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__spacy
     - metadata:
       - description: Creates a spacy training config according to passed arguments. See https://spacy.io/usage/training/#config for the target outcome.
       - topic: NLP, Machine Learning
   - [veld_publish_to_hf.yaml](https://github.com/veldhub/veld_chain__train_spacy_apis_ner/blob/main/veld_publish_to_hf.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__spacy
-    - input data velds:
+    - contains input velds:
       - https://github.com/veldhub/veld_data__apis_spacy_ner_models
     - metadata:
       - description: Pushing spacy model to huggingface.
       - topic: NLP
   - [veld_train.yaml](https://github.com/veldhub/veld_chain__train_spacy_apis_ner/blob/main/veld_train.yaml)
     - valid: True
-    - contained code velds:
+    - contains code velds:
       - https://github.com/veldhub/veld_code__spacy
-    - output data velds:
+    - contains output velds:
       - https://github.com/veldhub/veld_data__apis_spacy_ner_models
     - metadata:
       - description: A NER trainig setup, utilizing spaCy 3's config system.
